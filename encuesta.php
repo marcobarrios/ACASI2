@@ -1,14 +1,15 @@
 <!--Created by Marco Barrios on 12/02/2015.-->
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="es-ES">
     <meta charset="UTF-8">
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
     <title>Monitoreo</title>
     <link rel = "stylesheet" href = "styles/normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
     <link rel ="shortcut icon" type = "image/x-icon" href = "images/logo.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -19,21 +20,23 @@
         <h2 id = "header-h2">ACASI</h2>
     </header>
 
-    <?php if (!(($_GET['id']) != "")) { ?>
     <form name="myform" method="post" action="controllers/guardardatos.php">
 
         <input type="hidden" name="latitud" id="latitud" value="">
         <input type="hidden" name="longitud" id="longitud" value="">
         <input type="hidden" name="altitud" id="altitud" value="">
 
-        <div id="groupA" name="groupA">
-            <h3><span><img src="images/logo.png" width="50px"></span>Información General</h3>
-
+        <div id = "groupA" name="groupA">
+            <div class = "iA center" >
+                <h3>Información General</h3>
+                <div class = "next" id ="next1"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+            </div>
             <div id="1" class="form-group">
                 <label>1. ¿Cuál es su nombre?</label>
                 <div class="controls">
                         <input class="textinput textInput form-control" id="nombre" maxlength="45" name="nombre" type="text">
                 </div>
+                <div class = "next" id ="next2"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
             </div>
 
             <div id="2" class="form-group">
@@ -41,6 +44,7 @@
                 <div class="controls">
                         <input class="textinput textInput form-control" id="apellido" maxlength="45" name="apellido" type="text">
                 </div>
+                <div class = "next" id ="next3"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
             </div>
 
             <div id="3" class="form-group">
@@ -50,6 +54,8 @@
                         <input class="textinput textInput form-control" id="mes" maxlength="45" name="mes" type="text">
                         <input class="textinput textInput form-control" id="año" maxlength="45" name="año" type="text">
                 </div>
+                <div class = "next" id ="next4"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="4" class="form-group">
@@ -60,6 +66,8 @@
                         <label><input type="radio" name="color_tarjeta" value="3"/> Negro <br></label>
                         <label><input type="radio" name="color_tarjeta" value="4"/> Blanco <br></label>
                 </div>
+                <div class = "next" id ="next5"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="5" class="form-group">
@@ -67,6 +75,8 @@
                 <div class="controls">
                         <input class="textinput textInput form-control" id="edad" maxlength="45" name="edad" type="text">
                 </div>
+                <div class = "next" id ="next6"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
              <div id="6" class="form-group">
@@ -76,6 +86,8 @@
                         <label><input type="radio" name="estado_civil" value="2"/> Unido <br></label>
                         <label><input type="radio" name="estado_civil" value="3"/> Casado <br></label>
                 </div>
+                <div class = "next" id ="next7"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="7" class="form-group">
@@ -88,6 +100,8 @@
                         <label><input type="radio" name="grado" value="5"/> Diversificado <br></label>
                         <label><input type="radio" name="grado" value="6"/> Universitaria <br></label>
                 </div>
+                <div class = "next" id ="next8"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="8" class="form-group">
@@ -97,6 +111,8 @@
                         <label><input type="radio" name="grupo_cultural" value="2"/> Ladino <br></label>
                         <label><input type="radio" name="grupo_cultural" value="3"/> Otro (especifique) <br></label>
                 </div>
+                <div class = "next" id ="next9"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
             <div id="8.1" class="form-group">
                 <label>Especificque otro grupo cultural</label>
@@ -116,6 +132,8 @@
                         <label><input type="radio" name="idioma" value="6"/> Chalchiteco <br></label>
                         <label><input type="radio" name="idioma" value="7"/> Sakapulteco <br></label>
                 </div>
+                <div class = "next" id ="next10"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="10" class="form-group">
@@ -125,6 +143,8 @@
                         <input class="textinput textInput form-control" id="municipio" maxlength="45" name="municipio" type="text">
                         <input class="textinput textInput form-control" id="departamento" maxlength="45" name="departamento" type="text">
                 </div>
+                <div class = "next" id ="next11"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
 
             <div id="11" class="form-group">
@@ -136,6 +156,8 @@
                         <label><input type="radio" name="lugar_nacimiento" value="4"/> Comadrona <br></label>
                         <label><input type="radio" name="lugar_nacimiento" value="5"/> Otro (especifique) <br></label>
                 </div>
+                <div class = "next" id ="next12"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
             <div id="11.1" class="form-group">
                 <label>Especificque otro grupo lugar de nacimiento</label>
@@ -152,6 +174,8 @@
                         <label><input type="radio" name="religion" value="3"/> Otro (especifique) <br></label>
                         <label><input type="radio" name="religion" value="4"/> Ninguna <br></label>
                 </div>
+                <div class = "next" id ="next13"><a href="#"><span class = "glyphicon glyphicon-hand-right"></span></a></div>
+
             </div>
             <div id="12.1" class="form-group">
                 <label>Especificque otra religión</label>
@@ -981,7 +1005,7 @@
         </div>
         
     </form>
-    <?php } else { header('Location: index.php'); } ?>
+    
 
     <footer>
           <img src="images/logoIDEI.png" class = "img-footer" />
@@ -989,7 +1013,7 @@
           <img src="images/logoHIVOS.png" class = "img-footer" />
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="controllers/functions.js"></script>
+    <script type="text/javascript" src="controllers/poll.js"></script>
     <script type="text/javascript" src="controllers/geolocalizacion.js"></script>
 </body>
 </html>
