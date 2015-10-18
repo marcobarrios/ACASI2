@@ -1,232 +1,60 @@
-body
-{
+body{
 	background: #E0E0E0;
 	background-image: url("../images/fondo2.jpg");
 	background-size: 100%;
 	background-repeat: repeat-y;
 	background-attachment: fixed;
-	font-family: "Lato";
+	color: black;
+	font-family: "Lato", sans-serif;
 	font-size: 18px;
-
 }
-header
-{
-	background: #1A237E;
-	color: white;
-	padding: 0.3em;
-	text-align: center;
-	font-size: 65%;
+
+header{
+	background: #01579B;
 	top: 0;
-}
-header figure
-{
-	float: left;
-}
-header #logo{
-	margin: 0 0.5em 0 0;
-	border-right: 1px solid white;
-}
-header #logo img, h3 img
-{
-	margin-right: 0em;
-	padding-right: 0.5em;
-	width: 75px;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-}
-header #logo img:hover, h3 img:hover
-{
-	-moz-transform:rotate(360deg);
-	-webkit-transform:rotate(360deg);
-	-o-transform:rotate(360deg);
-}
-h3
-{
-	padding: 0.4em;
-	text-align: center;
-	width: 85%;
-	margin: 0.2em auto;
-	font-size: 60px;
-	font-family: "Lato";
-}
-input[type ="submit"]
-{
-	background: #5CA822;
-	border-radius: 1em;
-	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
-	color: white;
-	margin:0.8em;
-	padding: 0.6em;
-	padding-right: 2em;
-	text-shadow: rgba(0,0,0,0.5) 2px 5px 5px;
-}
-input[type ="submit"]:hover
-{
-	background:#ff4842;
-	cursor: pointer; 
-	box-shadow: inset 0 -3px rgba(0,0,0,0.3);
-}
-footer
-{
-	background: #607D8B;
-	text-align: center;
-	padding: 0.1em;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-}
-.btn
-{
-	position: relative;
-	text-align: center;
-}
-.btn:after
-{
-	font-family: icomoon;
-	content: "\e905";
-	color: white;
-	font-size: 0.9em;
-	position: relative;
-	margin:-3em;
-	pointer-events: none;
-	
-}
-.center{
-	position: absolute;
-	width: 100%;
-	top: 30%;
-
-}
-.center h3{
-	font-size: 50px;
-	font-family: "Lato";
-	font-weight: bold;
-}
-.form-group
-{
-	color: #200AC4;
-	font-size: 1.3em;
-	margin: 0.2em auto;
-	padding: 1em;
-	text-align: center;
-	text-decoration: inherit;
-	width: 60%;
-	position: absolute;
-	top: 30%;
-	left: 20%;
-}
-.form-control
-{
-	  display: block;
-	  width: 85%;
-	  height: 34px;
-	  padding: 3px 12px;
-	  font-size: 0.7em;
-	  font-weight: bold;
-	  line-height: 1.42857143;
-	  color: #000;
-	  margin: 0 auto;
-	  background-color: #ECEFF1;
-	  border: 1px solid #ccc;
-	  border-radius: 4px;
-	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-	       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.form-control:hover
-{
-	cursor: pointer; 
-	background: #8FB6C8;
-}
-.img-footer
-{
-	width: 80px;
-	margin-top: 0.5em;
-	margin-bottom: -0.5em;
-	display: inline;
-}
-.next{
-	text-align: center;
-}
-.next a span{
-	font-size: 40px;
-	color: red;
-}	
-.textinput
-{
-	text-align: center;
-	text-indent: 0%;
-	width: 82%;
+	padding: 0.1rem;
 }
 
-
-#id_requisitos_pf
-{
-	height: 9em;
-}
-#id_razon_no_proporciona_pf
-{
-	height: 5em;
-}
-#header-h2
-{
+header figure img{
 	display: none;
 }
-@media screen and (max-width: 800px) {
-	body
-	{
-		background-image: url("../images/fondo2.jpg");
-		background-size: 100%;
-		background-repeat: repeat-y;
-		background-attachment: fixed;
-	}
-	header
-	{
-		padding: 0.1em;
-	}
-	h3
-	{
-		font-size: 1em;
-		text-align: center;
-
-	}
-	h3 img
-	{
-		display: none;
-	}
-	.form-control
-	{
-		font-size: 0.8em;
-		width: 100%;
-	}
-	.form-group
-	{
-		font-size: 0.9em;
-		width: 73%;
-	}
-	.textinput
-	{
-		text-align: center;
-		width: 90%;
-	}
-	.img-footer
-	{
-		width: 50px;
-		margin-top: 0.5em;
-		margin-bottom: -0.5em;
-		display: inline;
-		margin: 0.2em auto;
-	}
-	#header-h1, #logo
-	{
-		display: none;
-	}
-	#header-h2
-	{
-		display: inline-block;
-	}
+header h2,
+input[type = text],
+.btn-div,
+.center
+{
+	text-align: center;
 }
+.controls
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.controls article
+{
+	display: inline-block;
+}
+.controls article .radio{
+	text-align: left;
+}
+.form-group .question label{
+	font-size: 1.2em;
+}
+.next{
+	font-size: 40px;
+	margin: 0 auto;
+}
+.radio{
+	padding: 0.3em;
+}
+.radio:hover{
+	background: #1B5E20;
+	border-radius: 0.4em;
+	color: #FFFFFF;
+	padding: 0.3em;
+	-webkit-box-shadow: 7px -8px 16px -7px rgba(0,176,47,1);
+	-moz-box-shadow: 7px -8px 16px -7px rgba(0,176,47,1);
+	box-shadow: 7px -8px 16px -7px rgba(0,176,47,1);
+}
+
