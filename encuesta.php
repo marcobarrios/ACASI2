@@ -58,8 +58,8 @@
                 </div>
                 <div class="controls">
                         <input class="textinput textInput form-control" id="dia" maxlength="45" name="dia" type="text" placeholder = "Ingrese el Dia">
-                        <input class="textinput textInput form-control" id="mes" maxlength="45" name="mes" type="text" placeholder = "Ingrese el Mes">
-                        <input class="textinput textInput form-control" id="año" maxlength="45" name="año" type="text" placeholder = "Ingrese el Año">
+                        <br><input class="textinput textInput form-control" id="mes" maxlength="45" name="mes" type="text" placeholder = "Ingrese el Mes">
+                        <br><input class="textinput textInput form-control" id="año" maxlength="45" name="año" type="text" placeholder = "Ingrese el Año">
                 </div>
                 <div class = "next" id ="next4"><a href="#" onclick="nextQuestion(3,4)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
@@ -164,21 +164,21 @@
                 </div>
                 <div class="controls">
                 <article>
-                    <div class="radio">
-                        <label><input type="radio" name="grupo_cultural" value="1"/> Maya</label>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label onclick="nextSubQuestionNOT()"><input type="radio" name="grupo_cultural" value="1"/> Maya</label>
                     </div>
-                    <div class="radio">
-                        <label><input type="radio" name="grupo_cultural" value="2"/> Ladino</label>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label ><input type="radio" name="grupo_cultural" value="2"/> Ladino</label>
                     </div>
-                    <div class="radio">
-                        <label><input type="radio" name="grupo_cultural" value="3"/> Otro (especifique)</label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label ><input type="radio" name="grupo_cultural" value="3"/> Otro (especifique)</label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="grupo_cultural" value="7" checked="checked"/> Ninguna de las anteriores</label>
                     </div>
                 </article>
                 </div>
-                <div id="8.1" class="form-group">
+                <div id="8.1" class="form-group1">
                     <label>Especificque otro grupo cultural</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_grupo_cultural" maxlength="45" name="otro_grupo_cultural" type="text" placeholder="Ingrese Grupo Cultural">
@@ -229,8 +229,8 @@
                 </div>
                 <div class="controls">
                         <input class="textinput textInput form-control" id="aldea" maxlength="45" name="aldea" type="text" placeholder ="Ingrese Aldea">
-                        <input class="textinput textInput form-control" id="municipio" maxlength="45" name="municipio" type="text"  placeholder ="Ingrese Municipio">
-                        <input class="textinput textInput form-control" id="departamento" maxlength="45" name="departamento" type="text" placeholder = "Ingrese Departamento">
+                        <br><input class="textinput textInput form-control" id="municipio" maxlength="45" name="municipio" type="text"  placeholder ="Ingrese Municipio">
+                        <br><input class="textinput textInput form-control" id="departamento" maxlength="45" name="departamento" type="text" placeholder = "Ingrese Departamento">
                 </div>
                 <div class = "next" id ="next11"><a href="#" onclick="nextQuestion(10,11)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
@@ -242,28 +242,28 @@
                 </div>
                 <div class="controls">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="lugar_nacimiento" value="1"/> Hospital Nacional </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="lugar_nacimiento" value="2"/> Hospital Privado </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="lugar_nacimiento" value="3"/> En su casa </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="lugar_nacimiento" value="4"/> Comadrona </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="lugar_nacimiento" value="5"/> Otro (especifique) </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="lugar_nacimiento" value="6"/ checked="checked"> Ninguna de las anteriores </label>
                     </div>
                 </article>
-                </div>
+               </div>
             
-            <div id="11.1" class="form-group">
+            <div id="11.1" class="form-group1">
                 <label>Especificque otro grupo lugar de nacimiento</label>
                 <div class="controls ">
                     <input class="textinput textInput form-control" id="otro_lugar_nacimiento" maxlength="45" name="otro_lugar_nacimiento" type="text" placeholder="Ingrese Lugar de Nacimiento">
@@ -278,21 +278,21 @@
                 </div>
                 <div class="controls">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="religion" value="1"/> Católica </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="religion" value="2"/> Evangélica </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="religion" value="3"/> Otro (especifique)</label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="religion" value="4" checked="checked" /> Ninguna dce las anteriores</label>
                     </div>
                 </article>
                 </div>
-            <div id="12.1" class="form-group">
+            <div id="12.1" class="form-group1">
                 <label>Especificque otra religión</label>
                 <div class="controls ">
                     <input class="textinput textInput form-control" id="otra_religion" maxlength="45" name="otra_religion" type="text" placeholder= "Ingrese Región">
@@ -333,19 +333,19 @@
                 <div class="question"><label>14. ¿Sus padres le han hablado de sexualidad?</label></div>
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="padres_hablado" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="padres_hablado" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="padres_hablado" value="3" checked="checked"/> Ningunas de las anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="14.1" class="form-group hide">
+                <div id="14.1" class="form-group1">
                 <label>¿A qué edad?</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="edad_platica" maxlength="45" name="edad_platica" type="text" placeholder ="Escriba Edad">
@@ -375,13 +375,13 @@
                 <div class="question"><label>17. ¿Ya tuvo su primera relación sexual?</label></div>
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="primera_relacion" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="primera_relacion" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="primera_relacion" value="3" checked="checked" /> Ninguna de las anteriores </label>
                     </div>
                 </article>
@@ -495,17 +495,24 @@
                     <label>Otro (especifique)</label>
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="otro_jovenes_temprana" value="1" /> Sí </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="otro_jovenes_temprana" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
+                <div id="18.1" class="form-group1">
+                    <label>Especifique </label>
+                    <div class="controls">
+                            <input class="textinput textInput form-control" id="otro_jovenes_temprano" maxlength="45" name="otro_joven_temprano" type="text" placeholder="Ingrese">
+                    </div>
+                </div>
+
                 <div class = "next"><a href="#" onclick="nextQuestion(18,19)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
                 </div>
             </div>
@@ -691,18 +698,18 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="idioma_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="idioma_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="idioma_otro" value="3" checked="checked"/> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
-                <div id="22.1" class="form-group">
+                <div id="22.1" class="form-group1">
                     <label>Especifique otro idioma</label>
                     <div class="controls">
                             <input class="textinput textInput form-control" id="otro_idioma" maxlength="45" name="otro_idioma" type="text" placeholder="Ingrese Idioma">
@@ -798,19 +805,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="discriminacion_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="discriminacion_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="discriminacion_otro" value="3" checked="checked"/> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="24.1" class="form-group">
+                <div id="24.1" class="form-group1">
                     <label>Especifique otra descriminación</label>
                     <div class="controls">
                         <input class="textinput textInput form-control" id="otra_discrminacion" maxlength="45" name="otra_discrminacion" type="text" placeholder="Ingrese Descriminación">
@@ -1012,18 +1019,18 @@
                     <label>Otro (especifique)</label>
                     <div class="controls ">
                         <article>
-                            <div class="radio">
+                            <div class="radio" onclick="nextSubQuestion()">
                                 <label><input type="radio" name="1adquirir_otro" value="1" /> Si </label>
                             </div>
-                            <div class="radio">
+                            <div class="radio" onclick="nextSubQuestionNOT()">
                                 <label><input type="radio" name="1adquirir_otro" value="2" /> No </label>
                             </div>
-                            <div class="radio">
+                            <div class="radio" onclick="nextSubQuestionNOT()">
                                 <label><input type="radio" name="1adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                             </div>
                         </article>
                     </div>
-                    <div id="27.1" class="form-group">
+                    <div id="27.1" class="form-group1">
                         <div>
                             <label>Especifique de que otra manera puede adquirir VIH</label>
                         </div>
@@ -1139,19 +1146,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="2adquirir_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="2adquirir_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="2adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="28.1" class="form-group">
+                <div id="28.1" class="form-group1">
                     <label>Especifique otra señal que presenta una persona con VIH</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otra_señal" maxlength="45" name="otra_señal" type="text" placeholder="Ingrese Señal">
@@ -1265,19 +1272,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="3adquirir_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="3adquirir_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="3adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="29.1" class="form-group">
+                <div id="29.1" class="form-group1">
                 <label>Especifique qué significa para usted</label>
                 <div class="controls ">
                     <input class="textinput textInput form-control" id="otro_significado" maxlength="45" name="otro_significado" type="text" placeholder="Especifique">
@@ -1412,19 +1419,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="4adquirir_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="4adquirir_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="4adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="30.1" class="form-group">
+                <div id="30.1" class="form-group1">
                     <label>Especifique otro síntoma</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_sintoma" maxlength="45" name="otro_sintoma" type="text" placeholder="Ingrese Sintoma">
@@ -1557,19 +1564,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="ayuda_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="ayuda_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="ayuda_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="32.1" class="form-group">
+                <div id="32.1" class="form-group1">
                     <label>Especifique donde buscó ayuda</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otra_ayuda" maxlength="45" name="otra_ayuda" type="text" placeholder="Ingrese">
@@ -1703,18 +1710,18 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="tratamiento_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="tratamiento_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="tratamiento_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
-                <div id="33.1" class="form-group">
+                <div id="33.1" class="form-group1">
                     <label>Especifique que tratamiento se le dió</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_tratamiento" maxlength="45" name="otro_tratamiento" type="text" placeholder="Ingrese Tratamiento">
@@ -1849,7 +1856,7 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="preguntas_otro" value="1" /> Si </label>
                     </div>
                     <div class="radio">
@@ -1861,7 +1868,7 @@
                 </article>
                 </div>
 
-                <div id="34.1" class="form-group">
+                <div id="34.1" class="form-group1">
                     <label>Especifique que otra atención se le dió</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_tratamiento" maxlength="45" name="otro_tratamiento" type="text" placeholder="Ingrese Atención">
@@ -2022,19 +2029,19 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="hecho_otro" value="1" /> Si </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="hecho_otro" value="2" /> No </label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="hecho_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
 
-                <div id="37.1" class="form-group">
+                <div id="37.1" class="form-group1">
                     <label>Especifique que más ha hecho</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_hecho" maxlength="45" name="otro_hecho" type="text" placeholder="Ingrese aqui">
@@ -2129,20 +2136,20 @@
                 
                 <div class="controls ">
                 <article>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestion()">
                         <label><input type="radio" name="metodo_otro" value="1" /> Si <br></label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="metodo_otro" value="2" /> No <br></label>
                     </div>
-                    <div class="radio">
+                    <div class="radio" onclick="nextSubQuestionNOT()">
                         <label><input type="radio" name="metodo_otro" value="3" checked="checked" /> Ninguno de los anteriores <br></label>
                     </div>
                 </article>
                 </div>
 
 
-                <div id="38.1" class="form-group">
+                <div id="38.1" class="form-group1">
                     <label>Especifique que otro método anticonceptivo conoce</label>
                     <div class="controls ">
                         <input class="textinput textInput form-control" id="otro_metodo" maxlength="45" name="otro_tmetodo" type="text" placeholder="Ingrese Método Anticonceptivo">
