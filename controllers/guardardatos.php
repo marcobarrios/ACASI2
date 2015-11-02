@@ -223,7 +223,7 @@ if ($mysqli === false) {
                                                                                                                                         $stmt->bind_param('isii', $idrespuesta, $respuesta, $idpregunta, $idencuesta);
                                                                                                                                         if($stmt->execute()) {
                                                                                                                                             $idrespuesta = '';
-                                                                                                                                            $respuesta = $_POST['otro_jovenes_temprano'];
+                                                                                                                                            $respuesta = $_POST['otro_joven_temprano'];
                                                                                                                                             $idpregunta = 32;
                                                                                                                                             //ha recibido platicas
                                                                                                                                             $stmt->bind_param('isii', $idrespuesta, $respuesta, $idpregunta, $idencuesta);

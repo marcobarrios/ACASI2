@@ -37,7 +37,7 @@
                     <label>1. ¿Cuál es su nombre?</label>
                 </div>
                 <div class="controls">
-                        <input class="textinput textInput form-control" id="nombre" maxlength="45" name="nombre" type="text"  placeholder = "Ingrese su Nombre" required>
+                        <input class="textinput textInput form-control vacio" id="nombre" maxlength="45" name="nombre" type="text"  placeholder = "Ingrese su Nombre" required>
                 </div>
                 <div class = "next" id ="next2"><a href="#" onclick="nextQuestion(1,2)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="controls">
                     <article>
                         <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="Rojo"/> Rojo</label>
+                            <label ><input type="radio" name="color_tarjeta" value="Rojo" checked="checked" /> Rojo</label>
                         </div>
                         <div class = "radio">
                             <label ><input type="radio" name="color_tarjeta" value="Amarillo"/> Amarillo </label>
@@ -544,7 +544,7 @@
                         <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> No quiero contestar</label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> No se la respuesta </label>
+                        <label><input type="radio" name="otro_jovenes_temprana" value="3"/> No se la respuesta </label>
                     </div>
                 </article>
                 </div>
@@ -690,7 +690,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next"><a href="#" onclick="nextQuestion(21,22)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next"><a href="#" onclick="questionNext21()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
@@ -1612,7 +1612,7 @@
                     </div>
                 </div>
 
-                <div class = "next"><a href="#" onclick="nextQuestion(30,31)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next"><a href="#" onclick="questionNext30()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
             </div>
             <div id="31" class="form-group">
@@ -1633,8 +1633,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next"><a href="#" onclick="nextQuestion(31,32)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
-
+                <div class = "next"><a href="#" onclick="questionNext31()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
 
             <div id="32" class="form-group">
@@ -2164,7 +2163,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next"><a href="#" onclick="nextQuestion(36,37)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next"><a href="#" onclick="questionNext36()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
@@ -2659,7 +2658,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(45,46)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="questionNext45()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
@@ -2683,7 +2682,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(46,47)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
@@ -2770,7 +2769,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(49,50)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="question49()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
@@ -2851,7 +2850,7 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(52,53)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="questionNext52()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
