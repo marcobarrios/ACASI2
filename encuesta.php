@@ -2355,7 +2355,10 @@
                         <label><input type="radio" name="tiempo_pareja" value="3" /> Más de un año </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="4" checked="checked"/> Ninguno de las anteriores </label>
+                        <label><input type="radio" name="tiempo_pareja" value="4" /> Actualmente no tengo pareja </label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="tiempo_pareja" value="5" checked="checked"/> Ninguno de las anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -2514,27 +2517,6 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol" value="1" /> Si </label>
-                    </div>
-                    <div class="radio">
-                        <label><input type="radio" name="toma_alcohol" value="2" /> No </label>
-                    </div>
-                   <div class="radio">
-                        <label><input type="radio" name="toma_alcohol" value="3" checked="checked" /> Ninguna de las anteriores </label>
-                    </div>
-                </article>
-                </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(52,53)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
-
-            </div>
-
-            <div id="53" class="form-group">
-                <div class="question">
-                    <label>53. ¿Con qué frecuencia Usted toma alcohol?</label>
-                </div>
-                <div class="controls">
-                <article>
-                    <div class="radio">
                         <label><input type="radio" name="toma_alcohol1" value="1" /> Diario </label>
                     </div>
                     <div class="radio">
@@ -2551,13 +2533,13 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(53,54)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(52,53)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
-            <div id="54" class="form-group">
+            <div id="53" class="form-group">
                 <div class="question">
-                    <label>54. ¿Usted toma alcohol antes de tener relaciones sexuales?</label>
+                    <label>53. ¿Usted toma alcohol antes de tener relaciones sexuales?</label>
                 </div>
                 <div class="controls">
                 <article>
@@ -2572,12 +2554,12 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next"><a href="#" onclick="nextQuestion(54,55)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next"><a href="#" onclick="nextQuestion(53,54)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
 
-            <div id="55" class="form-group">
+            <div id="54" class="form-group">
                 <div class="question">
-                    <label>55. ¿En general, qué idioma habla usted con sus amigos?</label>
+                    <label>54. ¿En general, qué idioma habla usted con sus amigos?</label>
                 </div>
                 <div class="controls">
                 <article>
@@ -2601,13 +2583,13 @@
                     </div>
                 </article>
                 </div>
-                <div class = "next"><a href="#" onclick="nextQuestion(55,56)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next"><a href="#" onclick="nextQuestion(54,55)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
-            <div id="56" class="form-group">
+            <div id="55" class="form-group">
                 <div class="question">
-                    <label>56. ¿Te gustaría tener más información sobre ITS y VIH?</label>
+                    <label>55. ¿Te gustaría tener más información sobre ITS y VIH?</label>
                 </div>
                 <div class="controls">
                 <article>
