@@ -2,48 +2,52 @@
  * Created by Marco Barrios on 22/02/2015.
  */
 function SelectChanged() {
-    if(document.myform.cultura.value == "8") {
-        mostrar('div_id_otra_cultura');
+    if(document.myform.grupo_cultural.value == "3") {
+        mostrar('8.1');
     } else {
-        ocultar('div_id_otra_cultura');
+        ocultar('8.1');
     }
 
-    if(document.myform.idservicio_salud.value == "6") {
-        mostrar('div_id_otro_servicio');
+    if(document.myform.lugar_nacimiento.value == "5") {
+        mostrar('11.1');
     } else {
-        ocultar('div_id_otro_servicio');
+        ocultar('11.1');
     }
 
-    if(document.myform.tiempo_servicio.value == "4") {
-        mostrar('div_id_especifica_tiempo');
+    if(document.myform.religion.value == "3") {
+        mostrar('12.1');
     } else {
-        ocultar('div_id_especifica_tiempo');
+        ocultar('12.1');
     }
 
-    if(document.myform.donde_consigue_pf.value == "6") {
-        mostrar('div_donde_consigue_condon');
+    if(document.myform.padres_hablado.value == "1") {
+        mostrar('14.1');
     } else {
-        ocultar('div_donde_consigue_condon');
+        ocultar('14.1');
     }
 
-    if(document.myform.proporcionaron_pf.value == "1") {
-        mostrar('div_id_brindaron_opciones');
+    if(document.myform.primera_relacion.value == "1") {
+        mostrar('17.1');
     } else {
-        ocultar('div_id_brindaron_opciones');
+        ocultar('17.1');
     }
 
-    if(document.myform.brindaron_opciones.value == "3") {
-        mostrar('div_id_especifica_opciones');
+    if(document.myform.otro_jovenes_temprana.value == "1") {
+        mostrar('18.1');
     } else {
-        ocultar('div_id_especifica_opciones');
+        ocultar('18.1');
     }
 
-    if(document.myform.atencion_abuso.value == "1") {
-        mostrar('div_id_kit_emergencia');
-        mostrar('div_id_prestador_maneja_kit');
+    if(document.myform.centro_programa.value == "1") {
+        mostrar('20');
     } else {
-        ocultar('div_id_kit_emergencia');
-        ocultar('div_id_prestador_maneja_kit');
+        ocultar('20');
+    }
+
+    if(document.myform.grupo_cultural.value == "3") {
+        mostrar('8.1');
+    } else {
+        ocultar('8.1');
     }
 }
 
@@ -58,12 +62,36 @@ function mostrar(id){
 }
 
 window.onload = function() {
-    ocultar('div_id_otra_cultura');
-    ocultar('div_id_otro_servicio');
-    ocultar('div_id_especifica_tiempo');
-    ocultar('div_donde_consigue_condon');
-    ocultar('div_id_brindaron_opciones');
-    ocultar('div_id_especifica_opciones');
-    ocultar('div_id_kit_emergencia');
-    ocultar('div_id_prestador_maneja_kit');
+    ocultar('8.1');
+    ocultar('11.1');
+    ocultar('12.1');
+    ocultar('14.1');
+    ocultar('17.1');
+    ocultar('18.1');
+    ocultar('20');
+    ocultar('22');
+    ocultar('22.1');
+    ocultar('24.1');
+    ocultar('27.1');
+    ocultar('28.1');
+    ocultar('29.1');
+    ocultar('30.1');
+    ocultar('31');
+    ocultar('32');
+    ocultar('32.1');
+    ocultar('33');
+    ocultar('33.1');
+    ocultar('34');
+    ocultar('34.1');
+    ocultar('37');
+    ocultar('37.1');
+    ocultar('38.1');
+    ocultar('45');
+    ocultar('46');
+    ocultar('47');
+    ocultar('48');
+    ocultar('49');
+    ocultar('50');
+    ocultar('51');
+    ocultar('53');
 }

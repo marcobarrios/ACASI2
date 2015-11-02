@@ -71,16 +71,16 @@
                 <div class="controls">
                     <article>
                         <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="1"/> Rojo</label>
+                            <label ><input type="radio" name="color_tarjeta" value="Rojo"/> Rojo</label>
                         </div>
                         <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="2"/> Amarillo </label>
+                            <label ><input type="radio" name="color_tarjeta" value="Amarillo"/> Amarillo </label>
                         </div>
                         <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="3"/> Negro </label>
+                            <label ><input type="radio" name="color_tarjeta" value="Negro"/> Negro </label>
                         </div>
                         <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="4"/> Blanco</label>
+                            <label ><input type="radio" name="color_tarjeta" value="Blanco"/> Blanco</label>
                         </div>
                         <div class = "radio">
                             <label ><input type="radio" name="color_tarjeta" value="5" checked="checked"/>Ninguna de las anteriores</label>
@@ -820,7 +820,7 @@
                 <div id="24.1" class="form-group1">
                     <label>Especifique otra descriminación</label>
                     <div class="controls">
-                        <input class="textinput textInput form-control" id="otra_discrminacion" maxlength="45" name="otra_discrminacion" type="text" placeholder="Ingrese Descriminación">
+                        <input class="textinput textInput form-control" id="otra_discriminacion" maxlength="45" name="otra_discriminacion" type="text" placeholder="Ingrese Descriminación">
                     </div>
                 </div>
                 <div class = "next"><a href="#" onclick="nextQuestion(24,'clave03')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -929,13 +929,13 @@
                     <div class="controls ">
                     <article>
                         <div class="radio">
-                            <label><input type="radio" name="1picadura_mosquito" value="1" /> Si </label>
+                            <label><input type="radio" name="picadura_mosquito" value="1" /> Si </label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="1picadura_mosquito" value="2" /> No </label>
+                            <label><input type="radio" name="picadura_mosquito" value="2" /> No </label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="1picadura_mosquito" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                            <label><input type="radio" name="picadura_mosquito" value="3" checked="checked"/> Ninguna de las anteriores </label>
                         </div>
                     </article>
                     </div>
@@ -947,13 +947,13 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="1relacion_proteccion" value="1" /> Si </label>
+                                <label><input type="radio" name="relacion_proteccion" value="1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1relacion_proteccion" value="2" /> No </label>
+                                <label><input type="radio" name="relacion_proteccion" value="2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1relacion_proteccion" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="relacion_proteccion" value="3" checked="checked"/> Ninguna de las anteriores </label>
                             </div>
                         </article>
                     </div>
@@ -965,13 +965,13 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="1compartir_persona" value="1" /> Si </label>
+                                <label><input type="radio" name="compartir_persona" value="1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1compartir_persona" value="2" /> No </label>
+                                <label><input type="radio" name="compartir_persona" value="2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1compartir_persona" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="compartir_persona" value="3" checked="checked"/> Ninguna de las anteriores </label>
                             </div>
                         </article>
                     </div>
@@ -984,13 +984,13 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="1beso" value="1" /> Si </label>
+                                <label><input type="radio" name="beso" value="1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1beso" value="2" /> No </label>
+                                <label><input type="radio" name="beso" value="2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1beso" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="beso" value="3" checked="checked"/> Ninguna de las anteriores </label>
                             </div>
                         </article>
                     </div>
@@ -1002,13 +1002,13 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="1abrazo" value="1" /> Si </label>
+                                <label><input type="radio" name="abrazo" value="1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1abrazo" value="2" /> No </label>
+                                <label><input type="radio" name="abrazo" value="2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="1abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                                <label><input type="radio" name="abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
                             </div>
                         </article>
                     </div>
@@ -1020,13 +1020,13 @@
                     <div class="controls ">
                         <article>
                             <div class="radio" onclick="nextSubQuestion()">
-                                <label><input type="radio" name="1adquirir_otro" value="1" /> Si </label>
+                                <label><input type="radio" name="adquirir_otro" value="1" /> Si </label>
                             </div>
                             <div class="radio" onclick="nextSubQuestionNOT()">
-                                <label><input type="radio" name="1adquirir_otro" value="2" /> No </label>
+                                <label><input type="radio" name="adquirir_otro" value="2" /> No </label>
                             </div>
                             <div class="radio" onclick="nextSubQuestionNOT()">
-                                <label><input type="radio" name="1adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                                <label><input type="radio" name="adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                             </div>
                         </article>
                     </div>
@@ -1052,13 +1052,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="2picadura_mosquito" value="1" /> Si </label>
+                        <label><input type="radio" name="peso" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2picadura_mosquito" value="2" /> No </label>
+                        <label><input type="radio" name="peso" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2picadura_mosquito" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="peso" value="3" checked="checked"/> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1071,13 +1071,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="2relacion_proteccion" value="1" /> Si </label>
+                        <label><input type="radio" name="diarrea" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2relacion_proteccion" value="2" /> No </label>
+                        <label><input type="radio" name="diarrea" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2relacion_proteccion" value="3" checked="checked"/> Ninguna de los anteriores </label>
+                        <label><input type="radio" name="diarrea" value="3" checked="checked"/> Ninguna de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1090,13 +1090,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="2compartir_persona" value="1" /> Si </label>
+                        <label><input type="radio" name="tos" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2compartir_persona" value="2" /> No </label>
+                        <label><input type="radio" name="tos" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2compartir_persona" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="tos" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1109,13 +1109,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="2beso" value="1" /> Si </label>
+                        <label><input type="radio" name="enfermedades" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2beso" value="2" /> No </label>
+                        <label><input type="radio" name="enfermedades" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2beso" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="enfermedades" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1128,13 +1128,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="2abrazo" value="1" /> Si </label>
+                        <label><input type="radio" name="cansancio" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2abrazo" value="2" /> No </label>
+                        <label><input type="radio" name="cansancio" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="2abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="cansancio" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1147,13 +1147,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="2adquirir_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="señal_otro" value="1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="2adquirir_otro" value="2" /> No </label>
+                        <label><input type="radio" name="señal_otro" value="2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="2adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="señal_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1178,13 +1178,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="3picadura_mosquito" value="1" /> Si </label>
+                        <label><input type="radio" name="abstenerse" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3picadura_mosquito" value="2" /> No </label>
+                        <label><input type="radio" name="abstenerse" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3picadura_mosquito" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="abstenerse" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1197,13 +1197,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="3relacion_proteccion" value="1" /> Si </label>
+                        <label><input type="radio" name="condon_relacion" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3relacion_proteccion" value="2" /> No </label>
+                        <label><input type="radio" name="condon_relacion" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3relacion_proteccion" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="condon_relacion" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1216,13 +1216,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="3compartir_persona" value="1" /> Si </label>
+                        <label><input type="radio" name="promiscuo" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3compartir_persona" value="2" /> No </label>
+                        <label><input type="radio" name="promiscuo" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3compartir_persona" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="promiscuo" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1235,13 +1235,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="3beso" value="1" /> Si </label>
+                        <label><input type="radio" name="trabajadoras" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3beso" value="2" /> No </label>
+                        <label><input type="radio" name="trabajadoras" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3beso" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="trabajadoras" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1254,13 +1254,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="3abrazo" value="1" /> Si </label>
+                        <label><input type="radio" name="homosexuales" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3abrazo" value="2" /> No </label>
+                        <label><input type="radio" name="homosexuales" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="3abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="homosexuales" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1273,13 +1273,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="3adquirir_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="significa_otro" value="1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="3adquirir_otro" value="2" /> No </label>
+                        <label><input type="radio" name="significa_otro" value="2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="3adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="significa_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1306,13 +1306,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="4picadura_mosquito" value="1" /> Si </label>
+                        <label><input type="radio" name="llaga" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4picadura_mosquito" value="2" /> No </label>
+                        <label><input type="radio" name="llaga" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4picadura_mosquito" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="llaga" value="3" checked="checked"/> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1325,13 +1325,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="4relacion_proteccion" value="1" /> Si </label>
+                        <label><input type="radio" name="comezon" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4relacion_proteccion" value="2" /> No </label>
+                        <label><input type="radio" name="comezon" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4relacion_proteccion" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="comezon" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1344,13 +1344,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="4compartir_persona" value="1" /> Si </label>
+                        <label><input type="radio" name="ardor" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4compartir_persona" value="2" /> No </label>
+                        <label><input type="radio" name="ardor" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4compartir_persona" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="ardor" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1363,13 +1363,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="4beso" value="1" /> Si </label>
+                        <label><input type="radio" name="materia" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4beso" value="2" /> No </label>
+                        <label><input type="radio" name="materia" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4beso" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="materia" value="3" checked="checked" /> Ninguna de las anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1382,13 +1382,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="4abrazo" value="1" /> Si </label>
+                        <label><input type="radio" name="flujo" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4abrazo" value="2" /> No </label>
+                        <label><input type="radio" name="flujo" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="4abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="flujo" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1401,13 +1401,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="41abrazo" value="1" /> Si </label>
+                        <label><input type="radio" name="ulcera" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="41abrazo" value="2" /> No </label>
+                        <label><input type="radio" name="ulcera" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="41abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="ulcera" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1420,13 +1420,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="4adquirir_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="sintoma_otro" value="1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="4adquirir_otro" value="2" /> No </label>
+                        <label><input type="radio" name="sintoma_otro" value="2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="4adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="sintoma_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1596,13 +1596,13 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofén" value="1" /> Si </label>
+                        <label><input type="radio" name="acetaminofen" value="1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofén" value="2" /> No </label>
+                        <label><input type="radio" name="acetaminofen" value="2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofén" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="acetaminofen" value="3" checked="checked"/> Ninguno de los anteriores </label>
                     </div>
                 </article>
                 </div>
@@ -1871,7 +1871,7 @@
                 <div id="34.1" class="form-group1">
                     <label>Especifique que otra atención se le dió</label>
                     <div class="controls ">
-                        <input class="textinput textInput form-control" id="otro_tratamiento" maxlength="45" name="otro_tratamiento" type="text" placeholder="Ingrese Atención">
+                        <input class="textinput textInput form-control" id="otra_atencion" maxlength="45" name="otra_atencion" type="text" placeholder="Ingrese Atención">
                     </div>
                 </div>
 
@@ -2152,7 +2152,7 @@
                 <div id="38.1" class="form-group1">
                     <label>Especifique que otro método anticonceptivo conoce</label>
                     <div class="controls ">
-                        <input class="textinput textInput form-control" id="otro_metodo" maxlength="45" name="otro_tmetodo" type="text" placeholder="Ingrese Método Anticonceptivo">
+                        <input class="textinput textInput form-control" id="otro_metodo" maxlength="45" name="otro_metodo" type="text" placeholder="Ingrese Método Anticonceptivo">
                     </div>
                 </div>
                 <div class = "next"><a href="#" onclick="nextQuestion(38,'clave04')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2530,7 +2530,7 @@
 
             <div id="53" class="form-group">
                 <div class="question">
-                    <label>53. ¿Usted toma alcohol?</label>
+                    <label>53. ¿Con qué frecuencia Usted toma alcohol?</label>
                 </div>
                 <div class="controls">
                 <article>
@@ -2631,6 +2631,7 @@
             <input type="submit" class="btn btn-danger" />
         </div>
     </form>
+
     <footer class ="hide">
           <img src="images/logoIDEI.png" class = "img-footer" />
           <img src="images/logoPARLAMENTO.png" class = "img-footer" />
