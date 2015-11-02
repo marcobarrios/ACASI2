@@ -82,9 +82,6 @@
                         <div class = "radio">
                             <label ><input type="radio" name="color_tarjeta" value="Blanco"/> Blanco</label>
                         </div>
-                        <div class = "radio">
-                            <label ><input type="radio" name="color_tarjeta" value="5" checked="checked"/>Ninguna de las anteriores</label>
-                        </div>
                     </article>
                 </div>
                 <div class = "next" id ="next5"><a href="#" onclick="nextQuestion(4,5)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -108,16 +105,19 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="estado_civil" value="1"/> Soltero</label>
+                        <label><input type="radio" name="estado_civil" value="2.1"/> Soltero</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="estado_civil" value="2"/> Unido </label>
+                        <label><input type="radio" name="estado_civil" value="2.2"/> Unido </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="estado_civil" value="3"/> Casado </label>
+                        <label><input type="radio" name="estado_civil" value="2.3"/> Casado </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="estado_civil" value="4" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="estado_civil" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="estado_civil" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -132,25 +132,28 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="1"/> Primaria incompleta (antes de 6to)</label>
+                        <label><input type="radio" name="grado" value="3.1"/> Primaria incompleta (antes de 6to)</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="2"/> Primaria completa (6to)</label>
+                        <label><input type="radio" name="grado" value="3.2"/> Primaria completa (6to)</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="3"/> Alfabetización</label>
+                        <label><input type="radio" name="grado" value="3.3"/> Alfabetización</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="4"/> Básico</label>
+                        <label><input type="radio" name="grado" value="3.4"/> Básico</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="5"/> Diversificado</label>
+                        <label><input type="radio" name="grado" value="3.5"/> Diversificado</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="6"/> Universitaria </label>
+                        <label><input type="radio" name="grado" value="3.6"/> Universitaria </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="grado" value="7" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="grado" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="grado" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -165,16 +168,19 @@
                 <div class="controls">
                 <article>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label onclick="nextSubQuestionNOT()"><input type="radio" name="grupo_cultural" value="1"/> Maya</label>
+                        <label onclick="nextSubQuestionNOT()"><input type="radio" name="grupo_cultural" value="4.1"/> Maya</label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label ><input type="radio" name="grupo_cultural" value="2"/> Ladino</label>
+                        <label ><input type="radio" name="grupo_cultural" value="4.2"/> Ladino</label>
                     </div>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label ><input type="radio" name="grupo_cultural" value="3"/> Otro (especifique)</label>
+                        <label ><input type="radio" name="grupo_cultural" value="4.3"/> Otro (especifique)</label>
                     </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="grupo_cultural" value="7" checked="checked"/> Ninguna de las anteriores</label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="grupo_cultural" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="grupo_cultural" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -194,28 +200,28 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="1"/> Castellano</label>
+                        <label><input type="radio" name="idioma" value="5.1"/> Castellano</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="2"/> Kiche</label>
+                        <label><input type="radio" name="idioma" value="5.2"/> Mam</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="3"/> Mam</label>
+                        <label><input type="radio" name="idioma" value="5.3"/> Ixil</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="4"/> Ixil</label>
+                        <label><input type="radio" name="idioma" value="5.4"/> Aguacateco</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="5"/> Aguacateco</label>
+                        <label><input type="radio" name="idioma" value="5.5"/> Chalchiteco</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="6"/> Chalchiteco</label>
+                        <label><input type="radio" name="idioma" value="5.6"/> Kiche</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="7"/> Sakapulteco</label>
+                        <label><input type="radio" name="idioma" value="98" checked="checked"/> No quiero contestar</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma" value="8" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="idioma" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -243,22 +249,25 @@
                 <div class="controls">
                 <article>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="lugar_nacimiento" value="1"/> Hospital Nacional </label>
+                        <label><input type="radio" name="lugar_nacimiento" value="7.1"/> Hospital Nacional </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="lugar_nacimiento" value="2"/> Hospital Privado </label>
+                        <label><input type="radio" name="lugar_nacimiento" value="7.2"/> Hospital Privado </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="lugar_nacimiento" value="3"/> En su casa </label>
+                        <label><input type="radio" name="lugar_nacimiento" value="7.3"/> En su casa </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="lugar_nacimiento" value="4"/> Comadrona </label>
+                        <label><input type="radio" name="lugar_nacimiento" value="7.4"/> Comadrona </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="lugar_nacimiento" value="5"/> Otro (especifique) </label>
+                        <label><input type="radio" name="lugar_nacimiento" value="7.5"/> Otro (especifique) </label>
                     </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="lugar_nacimiento" value="6"/ checked="checked"> Ninguna de las anteriores </label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="lugar_nacimiento" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="lugar_nacimiento" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                </div>
@@ -279,16 +288,22 @@
                 <div class="controls">
                 <article>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="religion" value="1"/> Católica </label>
+                        <label><input type="radio" name="religion" value="8.1"/> Católica </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="religion" value="2"/> Evangélica </label>
+                        <label><input type="radio" name="religion" value="8.2"/> Evangélica </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="religion" value="3"/> Otro (especifique)</label>
+                        <label><input type="radio" name="religion" value="8.3"/> Otro (especifique)</label>
                     </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="religion" value="4" checked="checked" /> Ninguna dce las anteriores</label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="religion" value="8.4"/> Ninguno</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="religion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="religion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -316,13 +331,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud_sexual" value="1"/> Si </label>
+                        <label><input type="radio" name="platicas_salud_sexual" value="9.1"/> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud_sexual" value="2"/> No </label>
+                        <label><input type="radio" name="platicas_salud_sexual" value="9.2"/> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud_sexual" value="3" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="platicas_salud_sexual" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="platicas_salud_sexual" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -334,13 +352,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="padres_hablado" value="1" /> Si </label>
+                        <label><input type="radio" name="padres_hablado" value="10.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="padres_hablado" value="2" /> No </label>
+                        <label><input type="radio" name="padres_hablado" value="10.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="padres_hablado" value="3" checked="checked"/> Ningunas de las anteriores </label>
+                        <label><input type="radio" name="padres_hablado" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="padres_hablado" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -376,13 +397,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="primera_relacion" value="1" /> Si </label>
+                        <label><input type="radio" name="primera_relacion" value="13.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="primera_relacion" value="2" /> No </label>
+                        <label><input type="radio" name="primera_relacion" value="13.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="primera_relacion" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="primera_relacion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="primera_relacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -403,13 +427,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="demostrar_hombre" value="1" /> Sí</label>
+                        <label><input type="radio" name="demostrar_hombre" value="14.A.1" /> Sí</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="demostrar_hombre" value="2" /> No </label>
+                        <label><input type="radio" name="demostrar_hombre" value="14.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="demostrar_hombre" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="demostrar_hombre" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="demostrar_hombre" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -421,13 +448,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="papas_dicen" value="1" /> Sí </label>
+                        <label><input type="radio" name="papas_dicen" value="14.B.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="papas_dicen" value="2" /> No </label>
+                        <label><input type="radio" name="papas_dicen" value="14.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="papas_dicen" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="papas_dicen" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="papas_dicen" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -440,13 +470,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="amigos_relaciones" value="1" /> Sí </label>
+                        <label><input type="radio" name="amigos_relaciones" value="14.C.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="amigos_relaciones" value="2" /> No </label>
+                        <label><input type="radio" name="amigos_relaciones" value="14.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="amigos_relaciones" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="amigos_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="amigos_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -459,13 +492,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="deja_tren" value="1" /> Sí </label>
+                        <label><input type="radio" name="deja_tren" value="14.D.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="deja_tren" value="2" /> No </label>
+                        <label><input type="radio" name="deja_tren" value="14.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="deja_tren" value="2" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="deja_tren" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="deja_tren" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -478,13 +514,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="prueba_amor" value="1" /> Sí </label>
+                        <label><input type="radio" name="prueba_amor" value="14.E.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="prueba_amor" value="2" /> No </label>
+                        <label><input type="radio" name="prueba_amor" value="14.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="prueba_amor" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="prueba_amor" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="prueba_amor" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -496,13 +535,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="1" /> Sí </label>
+                        <label><input type="radio" name="otro_jovenes_temprana" value="14.F.1" /> Sí </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="2" /> No </label>
+                        <label><input type="radio" name="otro_jovenes_temprana" value="14.F.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="otro_jovenes_temprana" value="3" checked="checked"/> No se la respuesta </label>
                     </div>
                 </article>
                 </div>
@@ -522,13 +564,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="centro_programa" value="1" /> Sí <br></label>
+                        <label><input type="radio" name="centro_programa" value="15.1" /> Sí <br></label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="centro_programa" value="2" /> No <br></label>
+                        <label><input type="radio" name="centro_programa" value="15.2" /> No <br></label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="centro_programa" value="3" checked="checked"/> Ninguna de las anteriores <br></label>
+                        <label><input type="radio" name="centro_programa" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="centro_programa" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -544,13 +589,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud" value="1" /> Sí </label>
+                        <label><input type="radio" name="platicas_salud" value="16.A.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud" value="2" /> No </label>
+                        <label><input type="radio" name="platicas_salud" value="16.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_salud" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="platicas_salud" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="platicas_salud" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -563,13 +611,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="lengua_materna" value="1" /> Sí </label>
+                        <label><input type="radio" name="lengua_materna" value="16.B.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="lengua_materna" value="2" /> No </label>
+                        <label><input type="radio" name="lengua_materna" value="16.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="lengua_materna" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="lengua_materna" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="lengua_materna" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -582,13 +633,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="terminos_salud" value="1" /> Sí </label>
+                        <label><input type="radio" name="terminos_salud" value="16.C.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="terminos_salud" value="2" /> No </label>
+                        <label><input type="radio" name="terminos_salud" value="16.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="terminos_salud" value="3" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="terminos_salud" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="terminos_salud" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -601,13 +655,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_pueblos" value="1" /> Sí </label>
+                        <label><input type="radio" name="platicas_pueblos" value="16.D.1" /> Sí </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_pueblos" value="2" /> No </label>
+                        <label><input type="radio" name="platicas_pueblos" value="16.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicas_pueblos" value="3" checked="checked" /> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="platicas_pueblos" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="platicas_pueblos" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -620,13 +677,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="medios_comunicacion" value="1" /> Si </label>
+                        <label><input type="radio" name="medios_comunicacion" value="17.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="medios_comunicacion" value="2" /> No </label>
+                        <label><input type="radio" name="medios_comunicacion" value="17.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="medios_comunicacion" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="medios_comunicacion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="medios_comunicacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -642,13 +702,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español" value="1" /> Si </label>
+                        <label><input type="radio" name="idioma_español" value="18.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español" value="2" /> No </label>
+                        <label><input type="radio" name="idioma_español" value="18.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="idioma_español" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="idioma_español" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -661,13 +724,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_materno" value="1" /> Si </label>
+                        <label><input type="radio" name="idioma_materno" value="18.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_materno" value="2" /> No </label>
+                        <label><input type="radio" name="idioma_materno" value="18.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_materno" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="idioma_materno" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="idioma_materno" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -680,13 +746,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español_materno" value="1" /> Si </label>
+                        <label><input type="radio" name="idioma_español_materno" value="18.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español_materno" value="2" /> No </label>
+                        <label><input type="radio" name="idioma_español_materno" value="18.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="idioma_español_materno" value="3" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="idioma_español_materno" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="idioma_español_materno" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -699,13 +768,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="idioma_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="idioma_otro" value="18.D.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="idioma_otro" value="2" /> No </label>
+                        <label><input type="radio" name="idioma_otro" value="18.D.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="idioma_otro" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="idioma_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="idioma_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -727,13 +799,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="planificacion_familiar" value="1" /> Si </label>
+                        <label><input type="radio" name="planificacion_familiar" value="19.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="planificacion_familiar" value="2" /> No</label>
+                        <label><input type="radio" name="planificacion_familiar" value="19.2" /> No</label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="planificacion_familiar" value="3" checked="checked" /> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="planificacion_familiar" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="planificacion_familiar" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -749,13 +824,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_edad" value="1" /> Si </label>
+                        <label><input type="radio" name="discriminacion_edad" value="20.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_edad" value="2" /> No </label>
+                        <label><input type="radio" name="discriminacion_edad" value="20.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_edad" value="3" checked="checked"/> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="discriminacion_edad" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="discriminacion_edad" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -768,13 +846,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_indigena" value="1" /> Si </label>
+                        <label><input type="radio" name="discriminacion_indigena" value="20.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_indigena" value="2" /> No </label>
+                        <label><input type="radio" name="discriminacion_indigena" value="20.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_indigena" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="discriminacion_indigena" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="discriminacion_indigena" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -787,13 +868,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_genero" value="1" /> Si </label>
+                        <label><input type="radio" name="discriminacion_genero" value="20.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_genero" value="2" /> No </label>
+                        <label><input type="radio" name="discriminacion_genero" value="20.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="discriminacion_genero" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="discriminacion_genero" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="discriminacion_genero" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -806,13 +890,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="discriminacion_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="discriminacion_otro" value="20.D.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="discriminacion_otro" value="2" /> No </label>
+                        <label><input type="radio" name="discriminacion_otro" value="20.D.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="discriminacion_otro" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="discriminacion_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="discriminacion_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -846,13 +933,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="fidelidad" value="1" /> Si </label>
+                        <label><input type="radio" name="fidelidad" value="21.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="fidelidad" value="2" /> No </label>
+                        <label><input type="radio" name="fidelidad" value="21.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="fidelidad" value="3" checked="checked"/> Ninguna de los anteriores </label>
+                        <label><input type="radio" name="fidelidad" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="fidelidad" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -865,13 +955,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="preservativo" value="1" /> Si </label>
+                        <label><input type="radio" name="preservativo" value="21.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="preservativo" value="2" checked="checked"/> No </label>
+                        <label><input type="radio" name="preservativo" value="21.B.2" checked="checked"/> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="preservativo" value="3" checked="checked"/> Ninguna de los anteriores </label>
+                        <label><input type="radio" name="preservativo" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="preservativo" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -884,13 +977,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="abstinencia" value="1" /> Si </label>
+                        <label><input type="radio" name="abstinencia" value="21.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="abstinencia" value="2" /> No </label>
+                        <label><input type="radio" name="abstinencia" value="21.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="abstinencia" value="3" checked="checked"/> Ninguna de los anteriores </label>
+                        <label><input type="radio" name="abstinencia" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="abstinencia" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -906,13 +1002,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="persona_saludable" value="1" /> Si </label>
+                        <label><input type="radio" name="persona_saludable" value="22.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="persona_saludable" value="2" /> No </label>
+                        <label><input type="radio" name="persona_saludable" value="22.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="persona_saludable" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="persona_saludable" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="persona_saludable" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -929,14 +1028,17 @@
                     <div class="controls ">
                     <article>
                         <div class="radio">
-                            <label><input type="radio" name="picadura_mosquito" value="1" /> Si </label>
+                            <label><input type="radio" name="picadura_mosquito" value="23.A.1" /> Si </label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="picadura_mosquito" value="2" /> No </label>
+                            <label><input type="radio" name="picadura_mosquito" value="23.A.2" /> No </label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="picadura_mosquito" value="3" checked="checked"/> Ninguna de las anteriores </label>
-                        </div>
+                        <label><input type="radio" name="picadura_mosquito" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="picadura_mosquito" value="99"/> No se la respuesta</label>
+                    </div>
                     </article>
                     </div>
                     <div class = "next"><a href="#" onclick="nextQuestion('d-27-1','d-27-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -947,13 +1049,16 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="relacion_proteccion" value="1" /> Si </label>
+                                <label><input type="radio" name="relacion_proteccion" value="23.B.1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="relacion_proteccion" value="2" /> No </label>
+                                <label><input type="radio" name="relacion_proteccion" value="23.B.2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="relacion_proteccion" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="relacion_proteccion" value="98" checked="checked"/> No quiero contestar</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="relacion_proteccion" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -965,13 +1070,16 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="compartir_persona" value="1" /> Si </label>
+                                <label><input type="radio" name="compartir_persona" value="23.C.1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="compartir_persona" value="2" /> No </label>
+                                <label><input type="radio" name="compartir_persona" value="23.C.2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="compartir_persona" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="compartir_persona" value="98" checked="checked"/> No quiero contestar</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="compartir_persona" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -984,13 +1092,16 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="beso" value="1" /> Si </label>
+                                <label><input type="radio" name="beso" value="23.D.1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="beso" value="2" /> No </label>
+                                <label><input type="radio" name="beso" value="23.D.2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="beso" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                                <label><input type="radio" name="beso" value="98" checked="checked"/> No quiero contestar</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="beso" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -1002,13 +1113,16 @@
                     <div class="controls ">
                         <article>
                             <div class="radio">
-                                <label><input type="radio" name="abrazo" value="1" /> Si </label>
+                                <label><input type="radio" name="abrazo" value="23.E.1" /> Si </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="abrazo" value="2" /> No </label>
+                                <label><input type="radio" name="abrazo" value="23.E.2" /> No </label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="abrazo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                                <label><input type="radio" name="abrazo" value="98" checked="checked"/> No quiero contestar</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="abrazo" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -1020,13 +1134,16 @@
                     <div class="controls ">
                         <article>
                             <div class="radio" onclick="nextSubQuestion()">
-                                <label><input type="radio" name="adquirir_otro" value="1" /> Si </label>
+                                <label><input type="radio" name="adquirir_otro" value="23.F.1" /> Si </label>
                             </div>
                             <div class="radio" onclick="nextSubQuestionNOT()">
-                                <label><input type="radio" name="adquirir_otro" value="2" /> No </label>
+                                <label><input type="radio" name="adquirir_otro" value="23.F.2" /> No </label>
                             </div>
                             <div class="radio" onclick="nextSubQuestionNOT()">
-                                <label><input type="radio" name="adquirir_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                                <label><input type="radio" name="adquirir_otro" value="98" checked="checked"/> No quiero contestar</label>
+                            </div>
+                            <div class="radio" onclick="nextSubQuestionNOT()">
+                                <label><input type="radio" name="adquirir_otro" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -1052,13 +1169,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="peso" value="1" /> Si </label>
+                        <label><input type="radio" name="peso" value="24.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="peso" value="2" /> No </label>
+                        <label><input type="radio" name="peso" value="24.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="peso" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="peso" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="peso" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1071,13 +1191,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="diarrea" value="1" /> Si </label>
+                        <label><input type="radio" name="diarrea" value="24.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="diarrea" value="2" /> No </label>
+                        <label><input type="radio" name="diarrea" value="24.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="diarrea" value="3" checked="checked"/> Ninguna de los anteriores </label>
+                        <label><input type="radio" name="diarrea" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="diarrea" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1090,13 +1213,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="tos" value="1" /> Si </label>
+                        <label><input type="radio" name="tos" value="24.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tos" value="2" /> No </label>
+                        <label><input type="radio" name="tos" value="24.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tos" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="tos" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="tos" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1109,13 +1235,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="enfermedades" value="1" /> Si </label>
+                        <label><input type="radio" name="enfermedades" value="24.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="enfermedades" value="2" /> No </label>
+                        <label><input type="radio" name="enfermedades" value="24.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="enfermedades" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="enfermedades" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="enfermedades" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1128,13 +1257,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="cansancio" value="1" /> Si </label>
+                        <label><input type="radio" name="cansancio" value="24.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cansancio" value="2" /> No </label>
+                        <label><input type="radio" name="cansancio" value="24.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cansancio" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="cansancio" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="cansancio" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1147,13 +1279,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="señal_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="señal_otro" value="24.F.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="señal_otro" value="2" /> No </label>
+                        <label><input type="radio" name="señal_otro" value="24.F.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="señal_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="señal_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="señal_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1178,14 +1313,17 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="abstenerse" value="1" /> Si </label>
+                        <label><input type="radio" name="abstenerse" value="25.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="abstenerse" value="2" /> No </label>
+                        <label><input type="radio" name="abstenerse" value="25.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="abstenerse" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="abstenerse" value="98" checked="checked"/> No quiero contestar</label>
                     </div>
+                    <div class="radio">
+                        <label><input type="radio" name="abstenerse" value="99"/> No se la respuesta</label>
+                    </div>>
                 </article>
                 </div>
                 <div class = "next"><a href="#" onclick="nextQuestion('d-29-1','d-29-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1197,13 +1335,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relacion" value="1" /> Si </label>
+                        <label><input type="radio" name="condon_relacion" value="25.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relacion" value="2" /> No </label>
+                        <label><input type="radio" name="condon_relacion" value="25.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relacion" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="condon_relacion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="condon_relacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1216,13 +1357,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="promiscuo" value="1" /> Si </label>
+                        <label><input type="radio" name="promiscuo" value="25.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="promiscuo" value="2" /> No </label>
+                        <label><input type="radio" name="promiscuo" value="25.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="promiscuo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="promiscuo" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="promiscuo" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1235,13 +1379,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="trabajadoras" value="1" /> Si </label>
+                        <label><input type="radio" name="trabajadoras" value="25.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="trabajadoras" value="2" /> No </label>
+                        <label><input type="radio" name="trabajadoras" value="25.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="trabajadoras" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="trabajadoras" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="trabajadoras" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1254,13 +1401,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="homosexuales" value="1" /> Si </label>
+                        <label><input type="radio" name="homosexuales" value="25.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="homosexuales" value="2" /> No </label>
+                        <label><input type="radio" name="homosexuales" value="25.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="homosexuales" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="homosexuales" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="homosexuales" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1273,13 +1423,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="significa_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="significa_otro" value="25.F.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="significa_otro" value="2" /> No </label>
+                        <label><input type="radio" name="significa_otro" value="25.F.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="significa_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="significa_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="significa_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1306,13 +1459,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="llaga" value="1" /> Si </label>
+                        <label><input type="radio" name="llaga" value="26.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="llaga" value="2" /> No </label>
+                        <label><input type="radio" name="llaga" value="26.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="llaga" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="llaga" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="llaga" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1325,13 +1481,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="comezon" value="1" /> Si </label>
+                        <label><input type="radio" name="comezon" value="26.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="comezon" value="2" /> No </label>
+                        <label><input type="radio" name="comezon" value="26.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="comezon" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="comezon" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="comezon" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1344,13 +1503,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="ardor" value="1" /> Si </label>
+                        <label><input type="radio" name="ardor" value="26.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="ardor" value="2" /> No </label>
+                        <label><input type="radio" name="ardor" value="26.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="ardor" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="ardor" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ardor" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1363,13 +1525,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="materia" value="1" /> Si </label>
+                        <label><input type="radio" name="materia" value="26.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="materia" value="2" /> No </label>
+                        <label><input type="radio" name="materia" value="26.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="materia" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="materia" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="materia" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1382,13 +1547,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="flujo" value="1" /> Si </label>
+                        <label><input type="radio" name="flujo" value="26.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="flujo" value="2" /> No </label>
+                        <label><input type="radio" name="flujo" value="26.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="flujo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="flujo" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="flujo" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1401,13 +1569,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="ulcera" value="1" /> Si </label>
+                        <label><input type="radio" name="ulcera" value="26.F.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="ulcera" value="2" /> No </label>
+                        <label><input type="radio" name="ulcera" value="26.F.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="ulcera" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="ulcera" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="ulcera" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1420,13 +1591,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="sintoma_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="sintoma_otro" value="26.G.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="sintoma_otro" value="2" /> No </label>
+                        <label><input type="radio" name="sintoma_otro" value="26.G.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="sintoma_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="sintoma_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="sintoma_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1446,13 +1620,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="busca_tratamiento" value="1" /> Si </label>
+                        <label><input type="radio" name="busca_tratamiento" value="27.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="busca_tratamiento" value="2" /> No </label>
+                        <label><input type="radio" name="busca_tratamiento" value="27.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="busca_tratamiento" value="3" checked="checked"/> Ninguno de las anteriores </label>
+                        <label><input type="radio" name="busca_tratamiento" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="busca_tratamiento" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1470,13 +1647,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="hospital" value="1" /> Si </label>
+                        <label><input type="radio" name="hospital" value="28.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hospital" value="2" /> No </label>
+                        <label><input type="radio" name="hospital" value="28.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hospital" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="hospital" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="hospital" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1489,13 +1669,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="puesto" value="1" /> Si </label>
+                        <label><input type="radio" name="puesto" value="28.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="puesto" value="2" /> No </label>
+                        <label><input type="radio" name="puesto" value="28.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="puesto" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="puesto" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="puesto" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1508,13 +1691,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="farmacia" value="1" /> Si </label>
+                        <label><input type="radio" name="farmacia" value="28.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="farmacia" value="2" /> No </label>
+                        <label><input type="radio" name="farmacia" value="28.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="farmacia" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="farmacia" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="farmacia" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1527,13 +1713,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="doctora" value="1" /> Si </label>
+                        <label><input type="radio" name="doctora" value="28.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="doctora" value="2" /> No </label>
+                        <label><input type="radio" name="doctora" value="28.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="doctora" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="doctora" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="doctora" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1546,13 +1735,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="comadrona" value="1" /> Si </label>
+                        <label><input type="radio" name="comadrona" value="28.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="comadrona" value="2" /> No </label>
+                        <label><input type="radio" name="comadrona" value="28.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="comadrona" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="comadrona" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="comadrona" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1565,13 +1757,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="ayuda_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="ayuda_otro" value="28.F.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="ayuda_otro" value="2" /> No </label>
+                        <label><input type="radio" name="ayuda_otro" value="28.F.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="ayuda_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="ayuda_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="ayuda_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1596,13 +1791,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofen" value="1" /> Si </label>
+                        <label><input type="radio" name="acetaminofen" value="29.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofen" value="2" /> No </label>
+                        <label><input type="radio" name="acetaminofen" value="29.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="acetaminofen" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="acetaminofen" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="acetaminofen" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1615,13 +1813,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="antibiotico" value="1" /> Si </label>
+                        <label><input type="radio" name="antibiotico" value="29.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="antibiotico" value="2" /> No </label>
+                        <label><input type="radio" name="antibiotico" value="29.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="antibiotico" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="antibiotico" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="antibiotico" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1634,13 +1835,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="vitamina" value="1" /> Si </label>
+                        <label><input type="radio" name="vitamina" value="29.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="vitamina" value="2" /> No </label>
+                        <label><input type="radio" name="vitamina" value="29.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="vitamina" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="vitamina" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="vitamina" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1653,13 +1857,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_cuidar" value="1" /> Si </label>
+                        <label><input type="radio" name="informacion_cuidar" value="29.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_cuidar" value="2" /> No </label>
+                        <label><input type="radio" name="informacion_cuidar" value="29.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_cuidar" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="informacion_cuidar" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="informacion_cuidar" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1672,13 +1879,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="nada" value="1" /> Si </label>
+                        <label><input type="radio" name="nada" value="29.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="nada" value="2" /> No </label>
+                        <label><input type="radio" name="nada" value="29.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="nada" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="nada" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="nada" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1691,13 +1901,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="refirieron_medico" value="1" /> Si </label>
+                        <label><input type="radio" name="refirieron_medico" value="29.F.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="refirieron_medico" value="2" /> No </label>
+                        <label><input type="radio" name="refirieron_medico" value="29.F.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="refirieron_medico" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="refirieron_medico" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="refirieron_medico" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1711,13 +1924,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="tratamiento_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="tratamiento_otro" value="29.G.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="tratamiento_otro" value="2" /> No </label>
+                        <label><input type="radio" name="tratamiento_otro" value="29.G.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="tratamiento_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="tratamiento_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="tratamiento_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1742,13 +1958,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="dieron_condones" value="1" /> Si </label>
+                        <label><input type="radio" name="dieron_condones" value="30.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="dieron_condones" value="2" /> No </label>
+                        <label><input type="radio" name="dieron_condones" value="30.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="dieron_condones" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="dieron_condones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="dieron_condones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1761,13 +1980,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="utilizar_condones" value="1" /> Si </label>
+                        <label><input type="radio" name="utilizar_condones" value="30.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="utilizar_condones" value="2" /> No </label>
+                        <label><input type="radio" name="utilizar_condones" value="30.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="utilizar_condones" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="utilizar_condones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="utilizar_condones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1781,13 +2003,16 @@
                 <article>
 
                     <div class="radio">
-                        <label><input type="radio" name="platicaron_condon" value="1" /> Si </label>
+                        <label><input type="radio" name="platicaron_condon" value="30.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicaron_condon" value="2" /> No </label>
+                        <label><input type="radio" name="platicaron_condon" value="30.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="platicaron_condon" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="platicaron_condon" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="platicaron_condon" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1800,13 +2025,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="material_escrito" value="1" /> Si </label>
+                        <label><input type="radio" name="material_escrito" value="30.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="material_escrito" value="2" /> No </label>
+                        <label><input type="radio" name="material_escrito" value="30.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="material_escrito" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="material_escrito" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="material_escrito" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1819,13 +2047,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_volver" value="1" /> Si </label>
+                        <label><input type="radio" name="informacion_volver" value="30.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_volver" value="2" /> No </label>
+                        <label><input type="radio" name="informacion_volver" value="30.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="informacion_volver" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="informacion_volver" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="informacion_volver" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1838,13 +2069,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="servicio_apto" value="1" /> Si </label>
+                        <label><input type="radio" name="servicio_apto" value="30.F.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="servicio_apto" value="2" /> No </label>
+                        <label><input type="radio" name="servicio_apto" value="30.F.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="servicio_apto" value="2" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="servicio_apto" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="servicio_apto" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1857,13 +2091,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="preguntas_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="preguntas_otro" value="30.G.1" /> Si </label>
                     </div>
-                    <div class="radio">
-                        <label><input type="radio" name="preguntas_otro" value="2" /> No </label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="preguntas_otro" value="30.G.2" /> No </label>
                     </div>
-                    <div class="radio">
-                        <label><input type="radio" name="preguntas_otro" value="3" checked="checked" /> Ninguno de los anteriores </label>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="preguntas_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestion()">
+                        <label><input type="radio" name="preguntas_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1883,19 +2120,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="riesgo" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="riesgo" value="31.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="riesgo" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="riesgo" value="31.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="riesgo" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="riesgo" value="31.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="riesgo" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="riesgo" value="31.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="riesgo" value="5" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="riesgo" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="riesgo" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1908,16 +2148,19 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="cambiado_comportamiento" value="1" /> Si </label>
+                        <label><input type="radio" name="cambiado_comportamiento" value="32.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cambiado_comportamiento" value="2" /> No </label>
+                        <label><input type="radio" name="cambiado_comportamiento" value="32.2" /> No </label>
                     </div>
                     <div class="radio">
                         <label><input type="radio" name="cambiado_comportamiento" value="3" /> No sabe </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cambiado_comportamiento" value="4" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="cambiado_comportamiento" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="cambiado_comportamiento" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1935,13 +2178,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="dejo_relaciones" value="1" /> Si </label>
+                        <label><input type="radio" name="dejo_relaciones" value="33.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="dejo_relaciones" value="2" /> No </label>
+                        <label><input type="radio" name="dejo_relaciones" value="33.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="dejo_relaciones" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="dejo_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="dejo_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1954,13 +2200,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relaciones" value="1" /> Si </label>
+                        <label><input type="radio" name="condon_relaciones" value="33.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relaciones" value="2" /> No </label>
+                        <label><input type="radio" name="condon_relaciones" value="33.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_relaciones" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="condon_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="condon_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1973,13 +2222,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="limitado_pareja" value="1" /> Si </label>
+                        <label><input type="radio" name="limitado_pareja" value="33.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="limitado_pareja" value="2" /> No </label>
+                        <label><input type="radio" name="limitado_pareja" value="33.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="limitado_pareja" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="limitado_pareja" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="limitado_pareja" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1992,13 +2244,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="numero_parejas" value="1" /> Si </label>
+                        <label><input type="radio" name="numero_parejas" value="33.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="numero_parejas" value="2" /> No </label>
+                        <label><input type="radio" name="numero_parejas" value="33.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="numero_parejas" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="numero_parejas" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="numero_parejas" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2011,13 +2266,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="practicar_sexo" value="1" /> Si </label>
+                        <label><input type="radio" name="practicar_sexo" value="33.E.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="practicar_sexo" value="2" /> No </label>
+                        <label><input type="radio" name="practicar_sexo" value="33.E.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="practicar_sexo" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="practicar_sexo" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="practicar_sexo" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2030,13 +2288,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="hecho_otro" value="1" /> Si </label>
+                        <label><input type="radio" name="hecho_otro" value="33.F.1" /> Si </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="hecho_otro" value="2" /> No </label>
+                        <label><input type="radio" name="hecho_otro" value="33.F.2" /> No </label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="hecho_otro" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="hecho_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="hecho_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2061,13 +2322,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="pildora" value="1" /> Si </label>
+                        <label><input type="radio" name="pildora" value="34.A.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="pildora" value="2" /> No </label>
+                        <label><input type="radio" name="pildora" value="34.A.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="pildora" value="2" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="pildora" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="pildora" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2080,13 +2344,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="diu" value="1" /> Si </label>
+                        <label><input type="radio" name="diu" value="34.B.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="diu" value="2" /> No </label>
+                        <label><input type="radio" name="diu" value="34.B.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="diu" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="diu" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="diu" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2099,13 +2366,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="inyecciones" value="1" /> Si </label>
+                        <label><input type="radio" name="inyecciones" value="34.C.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="inyecciones" value="2" /> No </label>
+                        <label><input type="radio" name="inyecciones" value="34.C.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="inyecciones" value="3" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="inyecciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="inyecciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2118,13 +2388,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="condones" value="1" /> Si </label>
+                        <label><input type="radio" name="condones" value="34.D.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condones" value="2" /> No </label>
+                        <label><input type="radio" name="condones" value="34.D.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condones" value="2" checked="checked"/> Ninguno de los anteriores </label>
+                        <label><input type="radio" name="condones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="condones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2137,13 +2410,16 @@
                 <div class="controls ">
                 <article>
                     <div class="radio" onclick="nextSubQuestion()">
-                        <label><input type="radio" name="metodo_otro" value="1" /> Si <br></label>
+                        <label><input type="radio" name="metodo_otro" value="34.E.1" /> Si <br></label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="metodo_otro" value="2" /> No <br></label>
+                        <label><input type="radio" name="metodo_otro" value="34.E.2" /> No <br></label>
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()">
-                        <label><input type="radio" name="metodo_otro" value="3" checked="checked" /> Ninguno de los anteriores <br></label>
+                        <label><input type="radio" name="metodo_otro" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio" onclick="nextSubQuestionNOT()">
+                        <label><input type="radio" name="metodo_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2176,19 +2452,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="experiencia_sexual" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="experiencia_sexual" value="35.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="experiencia_sexual" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="experiencia_sexual" value="35.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="experiencia_sexual" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="experiencia_sexual" value="35.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="experiencia_sexual" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="experiencia_sexual" value="35.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="experiencia_sexual" value="5" checked="checked" /> Ninguna de las anteriores</label>
+                        <label><input type="radio" name="experiencia_sexual" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="experiencia_sexual" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2203,19 +2482,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="joven_virgen" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="joven_virgen" value="36.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_virgen" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="joven_virgen" value="36.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_virgen" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="joven_virgen" value="36.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_virgen" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="joven_virgen" value="36.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_virgen" value="4" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="joven_virgen" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="joven_virgen" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2230,19 +2512,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="joven_relaciones" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="joven_relaciones" value="37.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_relaciones" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="joven_relaciones" value="37.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_relaciones" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="joven_relaciones" value="37.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_relaciones" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="joven_relaciones" value="37.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="joven_relaciones" value="5" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="joven_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="joven_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2257,19 +2542,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_relaciones" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="mujer_relaciones" value="38.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_relaciones" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="mujer_relaciones" value="38.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_relaciones" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="mujer_relaciones" value="38.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_relaciones" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="mujer_relaciones" value="38.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_relaciones" value="5" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="mujer_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="mujer_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2284,19 +2572,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_coquetear" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="mujer_coquetear" value="39.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_coquetear" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="mujer_coquetear" value="39.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_coquetear" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="mujer_coquetear" value="39.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_coquetear" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="mujer_coquetear" value="39.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mujer_coquetear" value="5" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="mujer_coquetear" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="mujer_coquetear" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2311,19 +2602,22 @@
                 <div class="controls ">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="hombre_exitacion" value="1" /> Definitivamente si </label>
+                        <label><input type="radio" name="hombre_exitacion" value="40.1" /> Definitivamente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hombre_exitacion" value="2" /> Probablemente si </label>
+                        <label><input type="radio" name="hombre_exitacion" value="40.2" /> Probablemente si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hombre_exitacion" value="3" /> Probablemente no </label>
+                        <label><input type="radio" name="hombre_exitacion" value="40.3" /> Probablemente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hombre_exitacion" value="4" /> Definitivamente no </label>
+                        <label><input type="radio" name="hombre_exitacion" value="40.4" /> Definitivamente no </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="hombre_exitacion" value="5" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="hombre_exitacion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="hombre_exitacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2346,19 +2640,22 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="1" /> Menos de 6 meses </label>
+                        <label><input type="radio" name="tiempo_pareja" value="41.1" /> Menos de 6 meses </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="2" /> Entre 6 meses y un año </label>
+                        <label><input type="radio" name="tiempo_pareja" value="41.2" /> Entre 6 meses y un año </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="3" /> Más de un año </label>
+                        <label><input type="radio" name="tiempo_pareja" value="41.3" /> Más de un año </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="4" /> Actualmente no tengo pareja </label>
+                        <label><input type="radio" name="tiempo_pareja" value="41.4" /> Actualmente no tengo pareja </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_pareja" value="5" checked="checked"/> Ninguno de las anteriores </label>
+                        <label><input type="radio" name="tiempo_pareja" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="tiempo_pareja" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2373,13 +2670,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="mas_pareja" value="1" /> Si </label>
+                        <label><input type="radio" name="mas_pareja" value="42.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mas_pareja" value="2" /> No </label>
+                        <label><input type="radio" name="mas_pareja" value="42.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mas_pareja" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="mas_pareja" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="mas_pareja" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2394,22 +2694,25 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="1" /> Actualmente no tengo pareja </label>
+                        <label><input type="radio" name="tiempo_otra1" value="43.1" /> Actualmente no tengo pareja </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="2" /> De vez en cuando o casual </label>
+                        <label><input type="radio" name="tiempo_otra1" value="43.2" /> De vez en cuando o casual </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="3" /> Menos de 6 meses </label>
+                        <label><input type="radio" name="tiempo_otra1" value="43.3" /> Menos de 6 meses </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="4" /> Entre 6 meses y un año </label>
+                        <label><input type="radio" name="tiempo_otra1" value="43.4" /> Entre 6 meses y un año </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="5" /> Más de un año </label>
+                        <label><input type="radio" name="tiempo_otra1" value="43.5" /> Más de un año </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra1" value="6" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="tiempo_otra1" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="tiempo_otra1" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2424,19 +2727,22 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="cuantas_parejas" value="1" /> 1 - 2 </label>
+                        <label><input type="radio" name="cuantas_parejas" value="44.1" /> 1 - 2 </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cuantas_parejas" value="2" /> 3 - 4 </label>
+                        <label><input type="radio" name="cuantas_parejas" value="44.2" /> 3 - 4 </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cuantas_parejas" value="3" /> 5 - 6 </label>
+                        <label><input type="radio" name="cuantas_parejas" value="44.3" /> 5 - 6 </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cuantas_parejas" value="4" /> 7 o más </label>
+                        <label><input type="radio" name="cuantas_parejas" value="44.4" /> 7 o más </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="cuantas_parejas" value="6" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="cuantas_parejas" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="cuantas_parejas" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2451,13 +2757,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="condon_otras" value="1" /> Si </label>
+                        <label><input type="radio" name="condon_otras" value="45.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_otras" value="2" /> No </label>
+                        <label><input type="radio" name="condon_otras" value="45.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_otras" value="3" checked="checked" /> Ninguno de las anteriores </label>
+                        <label><input type="radio" name="condon_otras" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="condon_otras" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2472,13 +2781,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="condon_ultima" value="1" /> Si </label>
+                        <label><input type="radio" name="condon_ultima" value="46.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_ultima" value="2" /> No </label>
+                        <label><input type="radio" name="condon_ultima" value="46.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="condon_ultima" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="condon_ultima" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="condon_ultima" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2493,16 +2805,19 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra" value="1" /> Actualmente no tengo pareja </label>
+                        <label><input type="radio" name="tiempo_otra" value="47.1" /> Siempre </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra" value="2" /> De vez en cuando o casual </label>
+                        <label><input type="radio" name="tiempo_otra" value="47.2" /> De vez en cuando </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra" value="3" /> Menos de 6 meses </label>
+                        <label><input type="radio" name="tiempo_otra" value="47.3" /> Nunca </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="tiempo_otra" value="4" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="tiempo_otra" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="tiempo_otra" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2517,19 +2832,22 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol1" value="1" /> Diario </label>
+                        <label><input type="radio" name="toma_alcohol1" value="48.1" /> Diario </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol1" value="2" /> Fin de semana </label>
+                        <label><input type="radio" name="toma_alcohol1" value="48.2" /> Fin de semana </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol1" value="3" /> Ocasional </label>
+                        <label><input type="radio" name="toma_alcohol1" value="48.3" /> Ocasional </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol1" value="4" /> Nunca toma </label>
+                        <label><input type="radio" name="toma_alcohol1" value="48.4" /> Nunca toma </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_alcohol1" value="5" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="toma_alcohol1" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="toma_alcohol1" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2544,13 +2862,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="toma_relaciones" value="1" /> Si </label>
+                        <label><input type="radio" name="toma_relaciones" value="49.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_relaciones" value="2" /> No </label>
+                        <label><input type="radio" name="toma_relaciones" value="49.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="toma_relaciones" value="3" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="toma_relaciones" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="toma_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2564,22 +2885,25 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="1" /> Solo español </label>
+                        <label><input type="radio" name="general_idioma" value="50.1" /> Solo español </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="2" /> Español más que lengua maya </label>
+                        <label><input type="radio" name="general_idioma" value="50.2" /> Español más que lengua maya </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="3" /> Las dos lenguas </label>
+                        <label><input type="radio" name="general_idioma" value="50.3" /> Las dos lenguas </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="4" /> Lengua maya mas que español </label>
+                        <label><input type="radio" name="general_idioma" value="50.4" /> Lengua maya mas que español </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="5" /> Solo lengua maya </label>
+                        <label><input type="radio" name="general_idioma" value="50.5" /> Solo lengua maya </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="general_idioma" value="6" checked="checked" /> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="general_idioma" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="general_idioma" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2594,13 +2918,16 @@
                 <div class="controls">
                 <article>
                     <div class="radio">
-                        <label><input type="radio" name="mas_informacion" value="1" /> Si </label>
+                        <label><input type="radio" name="mas_informacion" value="51.1" /> Si </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mas_informacion" value="2" /> No </label>
+                        <label><input type="radio" name="mas_informacion" value="51.2" /> No </label>
                     </div>
                     <div class="radio">
-                        <label><input type="radio" name="mas_informacion" value="3" checked="checked"/> Ninguna de las anteriores </label>
+                        <label><input type="radio" name="mas_informacion" value="98" checked="checked"/> No quiero contestar</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="mas_informacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
