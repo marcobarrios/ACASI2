@@ -78,6 +78,30 @@ input[type = text],
 	.iA div h3{
 		font-size:2.2em;
 		font-weight: bold;
-	}	
+	}
+		
 
+}
+.idiomas{
+	text-align: center;
+	
+	margin: 0 auto;
+}
+.idiomas div a{
+	display: block;
+	width: 200px;
+	margin-top:10px;
+}
+.botones-idioma{
+	text-align: center;
+}
+.botones-idioma div{
+	display: inline-block;
+}
+footer div img{
+	width: 150px;
+}
+footer div{
+	text-align: center;
+	margin: 100px;
 }

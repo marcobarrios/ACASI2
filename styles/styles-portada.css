@@ -1,137 +1,49 @@
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-nm13zp');
-	src:url('../fonts/icomoon.eot?#iefix-nm13zp') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-nm13zp') format('woff'),
-		url('../fonts/icomoon.ttf?-nm13zp') format('truetype'),
-		url('../fonts/icomoon.svg?-nm13zp#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal; 
+#login {
+    background-color: #4D4D4D;
+    padding-top: 20px;
 }
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+#login ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
-.icon-fb:before {
-	content: "\ea8d";
+#login .form-group input {
+    width: auto;
 }
-
-*
-{
-	margin: 0;
-	padding: 0;
+#login .form-group input[type="password"],
+#login .form-group input[type="email"] {
+    text-align: left;
+    width: 100% !important;
 }
-body
-{
-	background-image: url("../images/fondo1.jpg");
-	font-family: arial;
-	font-size: 20px;
+#login .glyphicon-user {
+    font-size: 135px;
+    color: #fff;
 }
-footer
-{
-	background: #607D8B;
-	text-align: center;
-	padding: 0.5em;
+#loginBody {
+    z-index: 10;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+    padding: 30px;
 }
-footer div
-{
-	margin: 0.7em;
+#loginBarra {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 130px;
+    top: 270px;
+    z-index: -10;
+    background: #C90000;
 }
-header
-{
-	background: #009688;
-	color: white;
-	overflow: hidden;
-	position: relative;
-}
-header figure
-{
-	float: left;
-}
-header figure img
-{
-	width: 100px;
-	margin: 0.4em;
-}
-header h1
-{
-	text-align: center;
-	font-size: 2.3em;
-	margin: 0.7em 70px 0 0;
-}
-header a
-{
-	padding: 0.5em;
-	color: white;
-	background: #ff4842;
-	border-radius: 10px;
-	margin: 2em 0.5em 0 0;
-	position: absolute;
-	right: 0;
-	top: 0; text-decoration: none;
-	
-}
-header a:hover
-{
-	background: #7dcd40;
-	text-decoration: none;
-	color: white;
-}
-#facebook
-{
-	padding: 1.5em;
-	text-align: center;
-	display: none;
-}
-#facebook a
-{
-	background: #133783;
-	border-radius: 4px;
-	color: white;
-	text-decoration: none;
-	padding: 1em;
-	font-family: arial, icomoon;
-}
-.img-footer
-{
-	width: 80px;
-	margin-top: 0.7em;
-	margin-bottom: -0.5em;
-	display: inline;
-}
-#box-img
-{
-	margin: 1em;
-}
-@media screen and (max-width: 650px) {
-	header a
-	{
-		display: none;
-	}
-	#facebook
-	{
-		display: inline-block;
-		
-	}
-	#box-img
-	{
-		margin: 0;
-	}
-}
-@media screen and (max-width: 400px) {
-	#box-img
-	{
-		display: none;
-	}
+#loginFooter {
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
 }

@@ -18,68 +18,54 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 </head>
-<body>
-<header>
-    <figure id = "logo">
-        <img src="images/logo.png">
-    </figure>
-    <h1>ACASI</h1>
-    <div id = "btn-login">
-        <a href="encuesta.php?idiomas=espaniol" id = "btn-log">Iniciar Encuesta</a>
-    </div>
-</header>
-        <div id = "facebook">
-            <?php if(!isset($_SESSION['facebook'])): ?>
-                <a href="<?php echo $helper->getLoginUrl($config['scopes']); ?>" class="btn btn-primary">Iniciar Sesión con Facebook</a>
-            <?php else:
-                header('Location: monitoreo.php?name='.$facebook_user->getName() . '&id='.$facebook_user->getId());
-            endif; ?>
-        </div>
-<div id = "box-img">
-    <!---->
-    <div id="myCarousel" class = "carousel">
-        <ol class = "carousel-indicators">
-            <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
-            <li data-target = "#myCarousel" data-slide-to = "1"></li>
-            <li data-target = "#myCarousel" data-slide-to = "2"></li>
-        </ol>
+<body id="login">
 
-        <div class="carousel-inner">
-            <div class = "item active">
-                <img src="images/r1.jpg" alt="img1" class = "img-responsive">
-                <div class = "carousel-caption">
-                    <h3>Imagen1</h3>
-                </div>
+    <p align="center">
+        <span class="glyphicon glyphicon-user"></span>
+    </p>
+    <div id="loginBody">
+        <form class="form-horizontal" role="form" method="POST" action="">
+        
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Correo electrónico</label>
+            <div class="col-md-6">
+                <input type="email" class="form-control" name="email" value="">
             </div>
-            <div class = "item">
-                <img src="images/r2.jpg" alt="img12" class = "img-responsive">
-                <div class = "carousel-caption">
-                    <h3>Imagen2</h3>
-                </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Contraseña</label>
+            <div class="col-md-6">
+                <input type="password" class="form-control" name="password">
             </div>
-            <div class = "item">
-                <img src="images/r3.jpg" alt="img3"  class = "img-responsive">
-                <div class = "carousel-caption">
-                    <h3>Imagen3</h3>
+        </div>
+
+        <div class="form-group" style="text-align: left;">
+            <div class="col-md-6 col-md-offset-4">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="remember"> Recordar cuenta
+                    </label>
                 </div>
             </div>
         </div>
-        <a class = "carousel-control left" href="#myCarousel" data-slide = "prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class = "carousel-control right" href="#myCarousel" data-slide = "next">
-            <span class="icon-next"></span>
-        </a>
-    </div>
+    
+        <hr />
+
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-4">
+                <a href="consentimiento.php" type="submit" class="btn btn-primary btn-block">Ingresar</a>
+            </div>
+        </div>
+    </form>
 </div>
-<!---->
-<footer>
-    <div>
-        <img class = "img-footer" src="images/logoHIVOS.png">
-        <img class = "img-footer" src="images/logoIDEI.png">
-        <img class = "img-footer" src="images/logoPARLAMENTO.png">
+    <div id="loginBarra">
     </div>
-</footer>
+    <div id="loginFooter">
+        
+    </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

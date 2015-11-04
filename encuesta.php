@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
     <link rel ="shortcut icon" type = "image/x-icon" href = "images/logo.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -3044,11 +3044,7 @@
         </div>
     </form>
 
-    <footer class ="hide">
-          <img src="images/logoIDEI.png" class = "img-footer" />
-          <img src="images/logoPARLAMENTO.png" class = "img-footer" />
-          <img src="images/logoHIVOS.png" class = "img-footer" />
-    </footer>
+    
 
 <?php
 $idioma = $_GET['idiomas'];
@@ -3078,9 +3074,9 @@ elseif($idioma == "mam")
 ?>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="controllers/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="controllers/poll.js"></script>
-    
     <script type="text/javascript" src="controllers/geolocalizacion.js"></script>
 </body>
 </html>
