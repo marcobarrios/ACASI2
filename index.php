@@ -25,7 +25,7 @@
     </figure>
     <h1>ACASI</h1>
     <div id = "btn-login">
-        <a href="encuesta.php" id = "btn-log">Iniciar Encuesta</a>
+        <a href="encuesta.php?idiomas=espaniol" id = "btn-log">Iniciar Encuesta</a>
     </div>
 </header>
         <div id = "facebook">
