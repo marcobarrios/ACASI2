@@ -55,7 +55,7 @@
 
         <div class="form-group">
             <div class="col-md-4 col-md-offset-4">
-                <a href="consentimiento.php" type="submit" class="btn btn-primary btn-block">Ingresar</a>
+                <a href="idioma.php" type="submit" class="btn btn-primary btn-block">Ingresar</a>
             </div>
         </div>
     </form>
