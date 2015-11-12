@@ -4,7 +4,7 @@
 <head lang="es-ES">
     <meta charset="UTF-8">
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
-    <title>::Monitoreo::</title>
+    <title>::ACASI::</title>
     <link rel = "stylesheet" href = "styles/normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
@@ -135,12 +135,6 @@
                     <div class="radio" onmousemove="PlaySound('estado_s3')" onmouseout="StopSound('estado_s3')">
                         <label><input  type="radio" name="estado_civil" value="2.3"/> Casado </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input  type="radio" name="estado_civil" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="estado_civil" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next7"><a href="#" onclick="nextQuestion(6,7)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -171,12 +165,6 @@
                     <div class="radio" onmousemove="PlaySound('grado_s6')" onmouseout="StopSound('grado_s6')">
                         <label><input  type="radio" name="grado" value="3.6"/> Universitaria </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input  type="radio" name="grado" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input  type="radio" name="grado" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next8"><a href="#" onclick="nextQuestion(7,8)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -197,12 +185,6 @@
                     </div>
                     <div class="radio radio_oc" onclick="nextSubQuestion()" onmousemove="PlaySound('grupo_s3')" onmouseout="StopSound('grupo_s3')">
                         <label ><input  type="radio" name="grupo_cultural" value="4.3"/> Otro (especifique)</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input  type="radio" name="grupo_cultural" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input  type="radio" name="grupo_cultural" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -241,12 +223,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('idioma_s7')" onmouseout="StopSound('idioma_s7')">
                         <label><input type="radio" name="idioma" value="5.7"/> Sacapulteco</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="idioma" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="idioma" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -298,12 +274,6 @@
                     <div class="radio radio_oc" onclick="nextSubQuestion()" onmousemove="PlaySound('nacio_s5')" onmouseout="StopSound('nacio_s5')">
                         <label><input  type="radio" name="lugar_nacimiento" value="7.5"/> Otro (especifique) </label>
                     </div>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input  type="radio" name="lugar_nacimiento" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input  type="radio" name="lugar_nacimiento" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                </div>
             
@@ -333,12 +303,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('religion_s4')" onmouseout="StopSound('religion_s4')">
                         <label><input type="radio" name="religion" value="8.4"/> Ninguno</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="religion" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="religion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -371,12 +335,6 @@
                     <div class="radio" onmousemove="PlaySound('platicas_s2')" onmouseout="StopSound('platicas_s2')">
                         <label><input type="radio" name="platicas_salud_sexual" value="9.2"/> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="platicas_salud_sexual" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="platicas_salud_sexual" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(13,14)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -391,12 +349,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('phds_s2')" onmouseout="StopSound('phds_s2')">
                         <label><input  type="radio" name="padres_hablado" value="10.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input  type="radio" name="padres_hablado" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input  type="radio" name="padres_hablado" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -437,12 +389,6 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="primera_relacion" value="13.2" /> No </label>
                     </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="primera_relacion" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="primera_relacion" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div id="17.1" class="form-group1">
@@ -469,12 +415,6 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="demostrar_hombre" value="14.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="demostrar_hombre" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="demostrar_hombre" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-1','d-18-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -489,12 +429,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="papas_dicen" value="14.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="papas_dicen" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="papas_dicen" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -514,12 +448,6 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="amigos_relaciones" value="14.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="amigos_relaciones" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="amigos_relaciones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-3','d-18-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -536,12 +464,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="deja_tren" value="14.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="deja_tren" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="deja_tren" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -561,12 +483,6 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="prueba_amor" value="14.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="prueba_amor" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="prueba_amor" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-5','d-18-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -584,12 +500,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="otro_jovenes_temprana" value="14.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="3" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="otro_jovenes_temprana" value="3"/> No se la respuesta </label>
                     </div>
                 </article>
                 </div>
@@ -615,12 +525,6 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="centro_programa" value="15.2" /> No <br></label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="centro_programa" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="centro_programa" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(19,20)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -643,12 +547,6 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_salud" value="16.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="platicas_salud" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="platicas_salud" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next()"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -665,12 +563,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="lengua_materna" value="16.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="lengua_materna" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="lengua_materna" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -689,12 +581,6 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="terminos_salud"  value="16.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="terminos_salud" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="terminos_salud" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-20-3','d-20-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -711,12 +597,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_pueblos" value="16.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="platicas_pueblos" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="platicas_pueblos" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -735,16 +615,9 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="medios_comunicacion" value="17.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="medios_comunicacion" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="medios_comunicacion" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext21()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
-
             </div>
 
             <div id="22" class="form-group">
@@ -761,12 +634,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_español" value="18.A.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="idioma_español" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="idioma_español" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -785,12 +652,6 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_materno" value="18.B.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="idioma_materno" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="idioma_materno" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-22-2','d-22-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -808,12 +669,6 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_español_materno" value="18.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="idioma_español_materno" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="idioma_español_materno" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-22-3','d-22-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -830,12 +685,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_otro" value="18.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="idioma_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="idioma_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -863,12 +712,6 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="planificacion_familiar" value="19.2" /> No</label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="planificacion_familiar" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="planificacion_familiar" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(23,24)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -891,12 +734,6 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_edad" value="20.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="discriminacion_edad" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="discriminacion_edad" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                      <div class = "next r_next"><a href="#" onclick="nextQuestion('d-24-1','d-24-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -913,12 +750,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_indigena" value="20.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="discriminacion_indigena" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="discriminacion_indigena" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -937,12 +768,6 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_genero" value="20.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="discriminacion_genero" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="discriminacion_genero" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                      <div class = "next r_next"><a href="#" onclick="nextQuestion('d-24-3','d-24-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -959,12 +784,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_otro" value="20.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="discriminacion_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="discriminacion_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1004,12 +823,6 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="fidelidad" value="21.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="fidelidad" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="fidelidad" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-25-1','d-25-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1027,12 +840,6 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="preservativo" value="21.B.2" checked="checked"/> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="preservativo" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="preservativo" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-25-2','d-25-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1049,12 +856,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="abstinencia" value="21.C.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="abstinencia" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="abstinencia" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1074,12 +875,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="persona_saludable" value="22.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="persona_saludable" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="persona_saludable" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1103,12 +898,6 @@
                         <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                             <label><input type="radio" name="picadura_mosquito" value="23.A.2" /> No </label>
                         </div>
-                        <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="picadura_mosquito" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="picadura_mosquito" value="99"/> No se la respuesta</label>
-                    </div>
                     </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-1','d-27-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1126,12 +915,6 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="relacion_proteccion" value="23.B.2" /> No </label>
                             </div>
-                            <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                                <label><input type="radio" name="relacion_proteccion" value="98" /> No quiero contestar</label>
-                            </div>
-                            <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                                <label><input type="radio" name="relacion_proteccion" value="99"/> No se la respuesta</label>
-                            </div>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-2','d-27-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1148,12 +931,6 @@
                             </div>
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="compartir_persona" value="23.C.2" /> No </label>
-                            </div>
-                            <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                                <label><input type="radio" name="compartir_persona" value="98"/> No quiero contestar</label>
-                            </div>
-                            <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                                <label><input type="radio" name="compartir_persona" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -1174,12 +951,6 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="beso" value="23.D.2" /> No </label>
                             </div>
-                            <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                                <label><input type="radio" name="beso" value="98" /> No quiero contestar</label>
-                            </div>
-                            <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                                <label><input type="radio" name="beso" value="99"/> No se la respuesta</label>
-                            </div>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-4','d-27-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1197,12 +968,6 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="abrazo" value="23.E.2" /> No </label>
                             </div>
-                            <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                                <label><input type="radio" name="abrazo" value="98" /> No quiero contestar</label>
-                            </div>
-                            <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                                <label><input type="radio" name="abrazo" value="99"/> No se la respuesta</label>
-                            </div>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-5','d-27-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1219,12 +984,6 @@
                             </div>
                             <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="adquirir_otro" value="23.F.2" /> No </label>
-                            </div>
-                            <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                                <label><input type="radio" name="adquirir_otro" value="98"/> No quiero contestar</label>
-                            </div>
-                            <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                                <label><input type="radio" name="adquirir_otro" value="99"/> No se la respuesta</label>
                             </div>
                         </article>
                     </div>
@@ -1256,12 +1015,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="peso" value="24.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="peso" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="peso" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-1','d-28-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1278,12 +1031,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="diarrea" value="24.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="diarrea" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="diarrea" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1302,12 +1049,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="tos" value="24.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="tos" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="tos" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-3','d-28-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1324,12 +1065,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="enfermedades" value="24.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="enfermedades" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="enfermedades" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1348,12 +1083,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="cansancio" value="24.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="cansancio" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="cansancio" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-5','d-28-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1370,12 +1099,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="señal_otro" value="24.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="señal_otro" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="señal_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1406,12 +1129,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="abstenerse" value="25.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="abstenerse" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="abstenerse" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-1','d-29-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1428,12 +1145,6 @@
                     </div>
                     <div class="radio">
                         <label><input type="radio" name="condon_relacion" value="25.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="condon_relacion" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="condon_relacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1452,12 +1163,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="promiscuo" value="25.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="promiscuo" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="promiscuo" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-3','d-29-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1474,12 +1179,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="trabajadoras" value="25.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="trabajadoras" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="trabajadoras" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1498,12 +1197,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="homosexuales" value="25.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="homosexuales" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="homosexuales" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-5','d-29-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1520,12 +1213,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="significa_otro" value="25.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="significa_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="significa_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1558,12 +1245,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="llaga" value="26.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="llaga" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="llaga" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-1','d-30-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1580,12 +1261,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="comezon" value="26.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="comezon" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="comezon" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1604,12 +1279,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="ardor" value="26.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="ardor" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="ardor" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-3','d-30-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1626,12 +1295,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="materia" value="26.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="materia" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="materia" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1650,12 +1313,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="flujo" value="26.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="flujo" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="flujo" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-5','d-30-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1673,12 +1330,6 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="ulcera" value="26.F.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_queiro')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="ulcera" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="ulcera" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-6','d-30-7')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1695,12 +1346,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="sintoma_otro" value="26.G.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="sintoma_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="sintoma_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1724,13 +1369,7 @@
                         <label><input type="radio" name="busca_tratamiento" value="27.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
-                        <label><input type="radio" name="busca_tratamiento" value="27.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="busca_tratamiento" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="busca_tratamiento" value="99"/> No se la respuesta</label>
+                        <label><input type="radio" name="busca_tratamiento" ''''''''''''value="27.2" /> No </label>
                     </div>
                 </article>
                 </div>
@@ -1753,12 +1392,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="hospital" value="28.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="hospital" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="hospital" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-1','d-32-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1775,12 +1408,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="puesto" value="28.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="puesto" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="puesto" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1799,12 +1426,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="farmacia" value="28.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="farmacia" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="farmacia" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-3','d-32-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1821,12 +1442,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="doctora" value="28.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="doctora" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="doctora" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1845,12 +1460,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="comadrona" value="28.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="comadrona" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="comadrona" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-5','d-32-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1867,12 +1476,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="ayuda_otro" value="28.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="ayuda_otro" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="ayuda_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1903,12 +1506,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="acetaminofen" value="29.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="acetaminofen" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="acetaminofen" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-1','d-33-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1925,12 +1522,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="antibiotico" value="29.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="antibiotico" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="antibiotico" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1949,12 +1540,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="vitamina" value="29.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="vitamina" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="vitamina" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-3','d-33-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1971,12 +1556,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="informacion_cuidar" value="29.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="informacion_cuidar" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="informacion_cuidar" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -1995,12 +1574,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="nada" value="29.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="nada" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="nada" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-5','d-33-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2017,12 +1590,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="refirieron_medico" value="29.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="refirieron_medico" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="refirieron_medico" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2041,12 +1608,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="tratamiento_otro" value="29.G.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="tratamiento_otro" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="tratamiento_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2077,12 +1638,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="dieron_condones" value="30.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="dieron_condones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="dieron_condones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-1','d-34-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2099,12 +1654,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="utilizar_condones" value="30.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="utilizar_condones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input  type="radio" name="utilizar_condones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2124,12 +1673,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="platicaron_condon" value="30.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="platicaron_condon" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="platicaron_condon" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-3','d-34-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2146,12 +1689,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="material_escrito" value="30.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="material_escrito" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="material_escrito" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2170,12 +1707,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="informacion_volver" value="30.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="informacion_volver" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="informacion_volver" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-5','d-34-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2193,12 +1724,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="servicio_apto" value="30.F.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="servicio_apto" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="servicio_apto" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-6','d-34-7')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2215,12 +1740,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="preguntas_otro" value="30.G.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="preguntas_otro" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="preguntas_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2252,12 +1771,6 @@
                     <div class="radio" onmousemove="PlaySound('q33_s4')" onmouseout="StopSound('q33_s4')">
                         <label><input type="radio" name="riesgo" value="31.4" /> Definitivamente no </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="riesgo" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="riesgo" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(35,36)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2277,12 +1790,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q34_s1')" onmouseout="StopSound('q30_s')">
                         <label><input type="radio" name="cambiado_comportamiento" value="3" /> No sabe </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="cambiado_comportamiento" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="cambiado_comportamiento" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2306,12 +1813,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="dejo_relaciones" value="33.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="dejo_relaciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="dejo_relaciones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-1','d-37-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2328,12 +1829,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="condon_relaciones" value="33.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="condon_relaciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="condon_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2352,12 +1847,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="limitado_pareja" value="33.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="limitado_pareja" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="limitado_pareja" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-3','d-37-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2374,12 +1863,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="numero_parejas" value="33.D.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="numero_parejas" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="numero_parejas" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2398,12 +1881,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="practicar_sexo" value="33.E.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="practicar_sexo" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="practicar_sexo" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-5','d-37-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2420,12 +1897,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="hecho_otro" value="33.F.2" /> No </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="hecho_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="hecho_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2456,12 +1927,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="pildora" value="34.A.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="pildora" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="pildora" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-1','d-38-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2478,12 +1943,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="diu" value="34.B.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="diu" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="diu" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2502,12 +1961,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="inyecciones" value="34.C.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="inyecciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="inyecciones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-3','d-38-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2525,12 +1978,6 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="condones" value="34.D.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="condones" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="condones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-4','d-38-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2547,12 +1994,6 @@
                     </div>
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="metodo_otro" value="34.E.2" /> No <br></label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="metodo_otro" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="metodo_otro" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2594,12 +2035,6 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="experiencia_sexual" value="35.4" /> Definitivamente no </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="experiencia_sexual" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="experiencia_sexual" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next1"><a href="#" onclick="nextQuestion(39,40)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2624,12 +2059,6 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="joven_virgen" value="36.4" /> Definitivamente no </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="joven_virgen" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="joven_virgen" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next1"><a href="#" onclick="nextQuestion(40,41)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2638,7 +2067,7 @@
 
             <div id="41" class="form-group">
                 <div class="question" onmousemove="PlaySound('q40_s')" onmouseout="StopSound('q40_s')">
-                    <label>41. ¿Usted piensa que si un joven quiere tener relaciones sexuales con barias parejas y las veces que él quiere es correcto para él?</label>
+                    <label>41. ¿Usted piensa que si un joven quiere tener relaciones sexuales con varias parejas y las veces que él quiere es correcto para él?</label>
                 </div>
                 <div class="controls ">
                 <article>
@@ -2653,12 +2082,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="joven_relaciones" value="37.4" /> Definitivamente no </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="joven_relaciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="joven_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2684,12 +2107,6 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="mujer_relaciones" value="38.4" /> Definitivamente no </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="mujer_relaciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="mujer_relaciones" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(42,43)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2714,12 +2131,6 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="mujer_coquetear" value="39.4" /> Definitivamente no </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="mujer_coquetear" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="mujer_coquetear" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(43,44)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2743,12 +2154,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="hombre_exitacion" value="40.4" /> Definitivamente no </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="hombre_exitacion" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="hombre_exitacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2782,12 +2187,6 @@
                     <div class="radio">
                         <label><input type="radio" name="tiempo_pareja" value="41.4" /> Actualmente no tengo pareja </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="tiempo_pareja" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="tiempo_pareja" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext45()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2806,12 +2205,6 @@
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
                         <label><input type="radio" name="mas_pareja" value="42.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="mas_pareja" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="mas_pareja" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2824,9 +2217,6 @@
                 <div class="controls">
                 <article>
                     <div class="radio" onmousemove="PlaySound('q47_s1')" onmouseout="StopSound('q47_s1')">
-                        <label><input type="radio" name="tiempo_otra1" value="43.1" /> Actualmente no tengo pareja </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('q47_s1')" onmouseout="StopSound('q47_s1')">
                         <label><input type="radio" name="tiempo_otra1" value="43.2" /> De vez en cuando o casual </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q47_s2')" onmouseout="StopSound('q47_s2')">
@@ -2837,12 +2227,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q47_s4')" onmouseout="StopSound('q47_s4')">
                         <label><input type="radio" name="tiempo_otra1" value="43.5" /> Más de un año </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="tiempo_otra1" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="tiempo_otra1" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2868,12 +2252,6 @@
                     <div class="radio" onmousemove="PlaySound('q48_s4')" onmouseout="StopSound('q48_s4')">
                         <label><input type="radio" name="cuantas_parejas" value="44.4" /> 7 o más </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="cuantas_parejas" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="cuantas_parejas" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next" ><a href="#" onclick="nextQuestion(48,49)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2892,12 +2270,6 @@
                     <div class="radio" onmousemove="PlaySound('q49_s2')" onmouseout="StopSound('q49_s2')">
                         <label><input type="radio" name="condon_otras" value="45.2" /> No </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="condon_otras" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="condon_otras" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="question49()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2915,12 +2287,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q49_s2')" onmouseout="StopSound('q49_s2')">
                         <label><input type="radio" name="condon_ultima" value="46.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="condon_ultima" value="98" /> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="condon_ultima" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2942,12 +2308,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q51_s3')" onmouseout="StopSound('q51_s3')">
                         <label><input type="radio" name="tiempo_otra" value="47.3" /> Nunca </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="tiempo_otra" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="tiempo_otra" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -2973,12 +2333,6 @@
                     <div class="radio" onmousemove="PlaySound('q52_s4')" onmouseout="StopSound('q52_s4')">
                         <label><input type="radio" name="toma_alcohol1" value="48.4" /> Nunca toma </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="toma_alcohol1" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="toma_alcohol1" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext52()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2996,12 +2350,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q53_s2')" onmouseout="StopSound('q53_s2')">
                         <label><input type="radio" name="toma_relaciones" value="49.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="toma_relaciones" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="toma_relaciones" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
@@ -3029,12 +2377,6 @@
                     <div class="radio" onmousemove="PlaySound('q54_s5')" onmouseout="StopSound('q54_s5')">
                         <label><input type="radio" name="general_idioma" value="50.5" /> Solo lengua maya </label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="general_idioma" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="general_idioma" value="99"/> No se la respuesta</label>
-                    </div>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(54,55)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -3052,12 +2394,6 @@
                     </div>
                     <div class="radio" onmousemove="PlaySound('q55_s2')" onmouseout="StopSound('q55_s2')">
                         <label><input type="radio" name="mas_informacion" value="51.2" /> No </label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_quiero')" onmouseout="StopSound('no_quiero')">
-                        <label><input type="radio" name="mas_informacion" value="98"/> No quiero contestar</label>
-                    </div>
-                    <div class="radio" onmousemove="PlaySound('no_se')" onmouseout="StopSound('no_se')">
-                        <label><input type="radio" name="mas_informacion" value="99"/> No se la respuesta</label>
                     </div>
                 </article>
                 </div>
