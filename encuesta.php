@@ -114,7 +114,7 @@
                     <label>5. ¿Qué edad tiene?</label>
                 </div>
                 <div class="controls">
-                        <input onkeydown="validacion_texto('edad','r_next')" class="textinput textInput form-control edad_1" id="edad" maxlength="45" name="edad" type="text" placeholder="Ingrese su Edad">
+                        <input onkeydown="validacion_texto('edad','r_next')" class="textinput textInput form-control edad_1" id="edad" maxlength="45" name="edad" type="number" min="1" placeholder="Ingrese su Edad">
                 </div>
                 <div class = "next r_next" id ="next6"><a href="#" onclick="nextQuestion(5,6)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
@@ -404,7 +404,7 @@
                 <div id="14.1" class="form-group1">
                 <label>¿A qué edad?</label>
                     <div class="controls ">
-                        <input onkeydown="validacion_texto('edad_platica','r_next')" class="textinput textInput form-control" id="edad_platica" maxlength="45" name="edad_platica" type="text" placeholder ="Escriba Edad">
+                        <input onkeydown="validacion_texto('edad_platica','r_next')" class="textinput textInput form-control" id="edad_platica" maxlength="45" name="edad_platica" type="number" min="1" placeholder ="Escriba Edad">
                     </div>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(14,15)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -412,7 +412,7 @@
             <div id="15" class="form-group">
                 <div class="question" onmousemove="PlaySound('aqesex_s')" onmouseout="StopSound('aqesex_s')"><label>15. ¿A qué edad los varones en su comunidad tienen su primera novia?</label></div>
                 <div class="controls">
-                        <input onkeydown="validacion_texto('edad_varones','r_next')" class="textinput textInput form-control" id="edad_varones" maxlength="45" name="edad_varones" type="text" placeholder="Ingrese Edad">
+                        <input onkeydown="validacion_texto('edad_varones','r_next')" class="textinput textInput form-control" id="edad_varones" maxlength="45" name="edad_varones" type="number" min="1" placeholder="Ingrese Edad">
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(15,16)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
@@ -421,7 +421,7 @@
             <div id="16" class="form-group">
                 <div class="question" onmousemove="PlaySound('aqesex2_s')" onmouseout="StopSound('aqesex2_s')" ><label>16. ¿A qué edad los padres de familia permiten que la hija tenga novio?</label></div>
                 <div class="controls">
-                        <input onkeydown="validacion_texto('edad_varones','r_next')" class="textinput textInput form-control" id="edad_padres" maxlength="45" name="edad_padres" type="text" placeholder="Ingrese Edad">
+                        <input onkeydown="validacion_texto('edad_varones','r_next')" class="textinput textInput form-control" id="edad_padres" maxlength="45" name="edad_padres" type="number" min="1" placeholder="Ingrese Edad">
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(16,17)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
@@ -448,7 +448,7 @@
                     <div id="17.1" class="form-group1">
                     <div onmousemove="PlaySound('primera_s3')" onmouseout="StopSound('primera_s3')"><label>¿A qué edad?</label></div>
                     <div class="controls">
-                        <input onkeydown="validacion_texto('edad_relacion','r_next')" class="textinput textInput form-control" id="edad_relacion" maxlength="45" name="edad_relacion" type="text" placeholder ="Ingrese Edad">
+                        <input onkeydown="validacion_texto('edad_relacion','r_next')" class="textinput textInput form-control" id="edad_relacion" maxlength="45" name="edad_relacion" type="number" min="1" placeholder ="Ingrese Edad">
                     </div>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(17,18)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>

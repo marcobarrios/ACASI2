@@ -110,3 +110,6 @@ footer div{
 .fechas_ div{
 	width: 250px;
 }
+input[type=text], input[type=number], input[type=select]{
+	text-align: center;
+}
