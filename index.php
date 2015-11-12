@@ -21,7 +21,11 @@
 <body id="login">
 
     <p align="center">
-        <span class="glyphicon glyphicon-user"></span>
+        <figure class="logos">
+            <img src="images/logoIDEI.png" alt="IDEI">
+            <img src="images/logoPARLAMENTO.png" alt="PARLAMENTO">
+            <img src="images/logoHIVOS.png" alt="hivos">
+        </figure>
     </p>
     <div id="loginBody">
         <form class="form-horizontal" role="form" method="POST" action="">
@@ -55,7 +59,7 @@
 
         <div class="form-group">
             <div class="col-md-4 col-md-offset-4">
-                <a href="idioma.php" type="submit" class="btn btn-primary btn-block">Ingresar</a>
+                <a href="idioma.php" type="submit" class="btn btn-success btn-block">Ingresar</a>
             </div>
         </div>
     </form>

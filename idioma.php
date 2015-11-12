@@ -22,11 +22,11 @@
 		<h2>Seleccióne el Idioma para el audio en la encuesta:</h2>
 			<div class="botones-idioma">
 				<div>
-					<a href="encuesta.php?idiomas=ninguno" class="btn btn-primary">Ningún Idioma</a>
-					<a href="encuesta.php?idiomas=espaniol" class="btn btn-primary">Español</a>
-					<a href="encuesta.php?idiomas=aguacateco" class="btn btn-primary">Aguacateco</a>
-					<a href="encuesta.php?idiomas=ixil" class="btn btn-primary">Ixil</a>
-					<a href="encuesta.php?idiomas=mam" class="btn btn-primary">Mam</a>
+					<a href="encuesta.php?idiomas=ninguno" class="btn btn-success">Ningún Idioma</a>
+					<a href="encuesta.php?idiomas=espaniol" class="btn btn-success">Español</a>
+					<a href="encuesta.php?idiomas=aguacateco" class="btn btn-success">Aguacateco</a>
+					<a href="encuesta.php?idiomas=ixil" class="btn btn-success">Ixil</a>
+					<a href="encuesta.php?idiomas=mam" class="btn btn-success">Mam</a>
 				</div>
 			</div>
 		</div>
