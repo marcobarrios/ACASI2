@@ -13,18 +13,15 @@
     <title>ACASI</title>
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
     <link rel ="shortcut icon" type = "image/x-icon" href = "images/logo.ico">
-    <link rel="stylesheet" href="styles/styles-portada.css">
     <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/styles-portada.css">
 </head>
 <body id="login">
-    <p align="center">
-        <figure class="logos">
-            <img src="images/logoIDEI.png" alt="IDEI">
-            <img src="images/logoPARLAMENTO.png" alt="PARLAMENTO">
-            <img src="images/logoHIVOS.png" alt="hivos">
-        </figure>
+    <p align="center" class="h_text">
+        <h2>ACASI</h2>
     </p>
     <div id="loginBody">
         <form class="form-horizontal" role="form" method="post" action="idioma.php">
@@ -56,7 +53,11 @@ document.writeln('Tu IP es: "' + ip + '"')
     <div id="loginBarra">
     </div>
     <div id="loginFooter">
-        
+        <figure class="logos">
+            <img src="images/logoIDEI.png" alt="IDEI">
+            <img src="images/logoPARLAMENTO.png" alt="PARLAMENTO">
+            <img src="images/logoHIVOS.png" alt="hivos">
+        </figure>
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
