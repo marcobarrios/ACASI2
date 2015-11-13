@@ -1814,17 +1814,16 @@
                     <label>Otro (especifique)</label>
                 </div>
                 <div class="controls ">
-                <article>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('q29_s1')" onmouseout="StopSound('q29_s1')">
-                        <label><input type="radio" name="preguntas_otro" value="30.G.1" /> Si </label>
-                    </div>
-                    <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
-                        <label><input type="radio" name="preguntas_otro" value="30.G.2" /> No </label>
-                    </div>
-                    <label ><input type="radio" name="preguntas_otro" checked="checked" hidden="true" value="97"/></label>
-                </article>
+                    <article>
+                        <div class="radio radio_oc" onclick="nextSubQuestion()" onmousemove="PlaySound('q29_s1')" onmouseout="StopSound('q29_s1')">
+                            <label><input type="radio" name="preguntas_otro" value="30.G.1" /> Si </label>
+                        </div>
+                        <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
+                            <label><input type="radio" name="preguntas_otro" value="30.G.2" /> No </label>
+                        </div>
+                        <label ><input type="radio" name="preguntas_otro" checked="checked" hidden="true" value="97"/></label>
+                    </article>
                 </div>
-
                 <div id="34.1" class="form-group1">
                     <label>Especifique que otra atención se le dió</label>
                     <div class="controls ">
@@ -1832,7 +1831,7 @@
                     </div>
                 </div>
 
-                <div class = "next"><a href="#" onclick="nextQuestion(34,35)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next r_next"><a href="#" onclick="nextQuestion(34,35)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
             </div>
             <div id="35" class="form-group">
