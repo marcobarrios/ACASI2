@@ -251,7 +251,7 @@
                     </select>
                 <br>
                 <div onmousemove="PlaySound('vive_s3')" onmouseout="StopSound('vive_s3')">Departamento:</div>
-                    <input type="text" class="textinput textInput form-control" id="departamento" name="departamento" disabled>
+                    <input type="text" class="textinput textInput form-control" id="departamento" name="departamento">
                 <br><div onmousemove="PlaySound('vive_s1')" onmouseout="StopSound('vive_s1')">Aldea, Canton o Caserio:</div>
                     <input class="textinput textInput form-control" maxlength="45" name="aldea" type="text" placeholder = "Ingrese Aldea, Canton o Caserio">
                 </div>
@@ -2306,6 +2306,7 @@
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
                         <label><input type="radio" name="mas_pareja" value="42.2" />  No </label>
                     </div>
+                    <label><input type="radio" name="mas_pareja" hidden= "True" value="97" /></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
