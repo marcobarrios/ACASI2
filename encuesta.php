@@ -2305,7 +2305,6 @@
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
                         <label><input type="radio" name="mas_pareja" checked="checked" value="42.2" />  No </label>
                     </div>
-                    <label ><input type="radio" name="mas_pareja" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
