@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 </head>
 <body id="login">
-
     <p align="center">
         <figure class="logos">
             <img src="images/logoIDEI.png" alt="IDEI">
@@ -29,7 +28,10 @@
     </p>
     <div id="loginBody">
         <form class="form-horizontal" role="form" method="post" action="idioma.php">
-        
+        <script language="javascript">
+var ip = java.net.InetAddress.getLocalHost().getHostAddress();
+document.writeln('Tu IP es: "' + ip + '"') 
+</script>
         <div class="form-group">
             <label class="col-md-4 control-label">Usuario</label>
             <div class="col-md-6">
