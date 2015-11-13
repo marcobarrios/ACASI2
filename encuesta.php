@@ -33,7 +33,7 @@
                 <div class="main-title">
                     <h3>Información General</h3>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(0,18)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(0,1)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
             <div id="1" class="form-group">
                 <div class="question">
