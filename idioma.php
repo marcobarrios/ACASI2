@@ -4,7 +4,7 @@
 <head lang="es-ES">
     <meta charset="UTF-8">
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
-    <title>::Monitoreo::</title>
+    <title>::ACASI::</title>
     <link rel = "stylesheet" href = "styles/normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'/>
@@ -18,8 +18,25 @@
         </figure>
         <h2>ACASI</h2>
     </header>
+<?php $usuario = $_POST['user']; 
+$contrasenia = $_POST['password'];
+
+$mysqli = new mysqli("localhost", "root", "", "acasi2");
+if ($mysqli === false) {
+    die ("ERROR: No se estableció la conexión. " . mysqli_connect_error());
+} else {
+    $sql = "SELECT usuario FROM usuarios where usuario = '$usuario' AND password='$contrasenia'";
+            $result = $mysqli->query($sql);
+            $row = $result->fetch_object();
+            $accesso = $row->usuario;
+} 
+$mysqli->close(); ?>
+
+<?php if ($accesso != null) { ?>
+    <form name="form" method="post" action="encuesta.php">
+    <input hidden name="user" value="1">
 		<div class="idiomas">
-		<h2>Seleccióne el Idioma para el audio en la encuesta:</h2>
+		<h2>Seleccione el idioma para el audio en la encuesta:</h2>
 			<div class="botones-idioma">
 				<div>
 					<a href="encuesta.php?idiomas=ninguno" class="btn btn-success">Ningún Idioma</a>
@@ -30,6 +47,10 @@
 				</div>
 			</div>
 		</div>
+    </form>
+
+<?php } else { header('Location: index.php'); } ?>
+
 	<footer class ="">
 		<div>
           <img src="images/logoIDEI.png" class = "img-footer" />

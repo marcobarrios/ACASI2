@@ -19,6 +19,9 @@
         <h2>ACASI</h2>
     </header>
 
+<?php $usuario = $_POST['user']; ?>
+<?php if ($usuario == null) { ?>
+
     <form name="myform" method="post" action="controllers/guardardatos.php">
 
         <input type="hidden" name="latitud" id="latitud" value="">
@@ -2517,7 +2520,7 @@
         </div>
     </form>
 
-    
+    <?php } else { header('Location: index.php'); } ?>
 
 <?php
 $idioma = $_GET['idiomas'];

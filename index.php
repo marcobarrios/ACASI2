@@ -28,13 +28,12 @@
         </figure>
     </p>
     <div id="loginBody">
-        <form class="form-horizontal" role="form" method="POST" action="">
+        <form class="form-horizontal" role="form" method="post" action="idioma.php">
         
-
         <div class="form-group">
-            <label class="col-md-4 control-label">Correo electrónico</label>
+            <label class="col-md-4 control-label">Usuario</label>
             <div class="col-md-6">
-                <input type="email" class="form-control" name="email" value="">
+                <input type="text" class="form-control" name="user" value="">
             </div>
         </div>
 
@@ -43,24 +42,12 @@
             <div class="col-md-6">
                 <input type="password" class="form-control" name="password">
             </div>
-        </div>
+        </div> 
 
-        <div class="form-group" style="text-align: left;">
-            <div class="col-md-6 col-md-offset-4">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" name="remember"> Recordar cuenta
-                    </label>
-                </div>
-            </div>
-        </div>
-    
-        <hr />
-
-        <div class="form-group">
-            <div class="col-md-4 col-md-offset-4">
-                <a href="idioma.php" type="submit" class="btn btn-success btn-block">Ingresar</a>
-            </div>
+        <hr />  
+        
+        <div class = "btn-div">
+            <input type="submit" class="btn btn-success"/>
         </div>
     </form>
 </div>
