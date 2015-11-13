@@ -67,13 +67,13 @@
                     </div>
                     <div>
                         <h4><strong>Seleccione Mes</strong></h4>
-                        <select name="dia" id="" class="form-control">
+                        <select name="mes" id="" class="form-control">
                             <option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option>
                         </select>
                     </div>
                     <div>
                         <h4><strong>Seleccione Año</strong></h4>
-                        <select name="dia" id="" class="form-control" onclick="fecha()">
+                        <select name="año" id="" class="form-control" onclick="fecha()">
                             <option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option>
                             <option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option>
                             <option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option>
@@ -104,6 +104,7 @@
                         <div class = "radio">
                             <label ><input type="radio" name="color_tarjeta" value="Blanco"/> Blanco</label>
                         </div>
+                            <label ><input type="radio" name="color_tarjeta" checked="checked" hidden="true" value="97"/></label>
                     </article>
                 </div>
                 <div class = "next r_next" id ="next5"><a href="#" onclick="nextQuestion(4,5)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -135,6 +136,7 @@
                     <div class="radio" onmousemove="PlaySound('estado_s3')" onmouseout="StopSound('estado_s3')">
                         <label><input  type="radio" name="estado_civil" value="2.3"/> Casado </label>
                     </div>
+                    <label ><input type="radio" name="estado_civil" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next7"><a href="#" onclick="nextQuestion(6,7)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -165,6 +167,7 @@
                     <div class="radio" onmousemove="PlaySound('grado_s6')" onmouseout="StopSound('grado_s6')">
                         <label><input  type="radio" name="grado" value="3.6"/> Universitaria </label>
                     </div>
+                    <label ><input type="radio" name="grado" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next8"><a href="#" onclick="nextQuestion(7,8)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -186,6 +189,7 @@
                     <div class="radio radio_oc" onclick="nextSubQuestion()" onmousemove="PlaySound('grupo_s3')" onmouseout="StopSound('grupo_s3')">
                         <label ><input  type="radio" name="grupo_cultural" value="4.3"/> Otro (especifique)</label>
                     </div>
+                    <label ><input type="radio" name="grupo_cultural" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div id="8.1" class="form-group1">
@@ -224,6 +228,7 @@
                     <div class="radio" onmousemove="PlaySound('idioma_s7')" onmouseout="StopSound('idioma_s7')">
                         <label><input type="radio" name="idioma" value="5.7"/> Sacapulteco</label>
                     </div>
+                    <label ><input type="radio" name="idioma" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next10"><a href="#" onclick="nextQuestion(9,10)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -236,7 +241,7 @@
                 </div>
                 <div class="controls">
                 <div onmousemove="PlaySound('vive_s2')" onmouseout="StopSound('vive_s2')">Municipio:</div>
-                    <select onclick="radio()" name="aledea" id="" class="form-control _mDep textinput textInput">
+                    <select onclick="radio()" name="municipio" id="" class="form-control _mDep textinput textInput">
                         <option value="Aguacatán">Aguacatán</option>
                         <option value="Colotenango">Colotenango</option>
                         <option value="Concepción Chiquirichapa">Concepción Chiquirichapa</option>
@@ -246,8 +251,8 @@
                     </select>
                 <br><div onmousemove="PlaySound('vive_s3')" onmouseout="StopSound('vive_s3')">Departamento:</div>
                     <input type="text" class="textinput textInput form-control" id="departamento" name="departamento" disabled>
-                <br><div onmousemove="PlaySound('vive_s1')" onmouseout="StopSound('vive_s1')">Aledea, Canton o Caserio:</div>
-                    <input class="textinput textInput form-control" maxlength="45"  type="text" placeholder = "Ingrese Aldea, Canton o Caserio">
+                <br><div onmousemove="PlaySound('vive_s1')" onmouseout="StopSound('vive_s1')">Aldea, Canton o Caserio:</div>
+                    <input class="textinput textInput form-control" maxlength="45" name="aldea" type="text" placeholder = "Ingrese Aldea, Canton o Caserio">
                 </div>
                 <div class = "next r_next" id ="next11"><a href="#" onclick="nextQuestion(10,11)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
@@ -274,6 +279,7 @@
                     <div class="radio radio_oc" onclick="nextSubQuestion()" onmousemove="PlaySound('nacio_s5')" onmouseout="StopSound('nacio_s5')">
                         <label><input  type="radio" name="lugar_nacimiento" value="7.5"/> Otro (especifique) </label>
                     </div>
+                    <label ><input type="radio" name="lugar_nacimiento" checked="checked" hidden="true" value="97"/></label>
                 </article>
                </div>
             
@@ -304,6 +310,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('religion_s4')" onmouseout="StopSound('religion_s4')">
                         <label><input type="radio" name="religion" value="8.4"/> Ninguno</label>
                     </div>
+                    <label ><input type="radio" name="religion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
             <div id="12.1" class="form-group1">
@@ -319,7 +326,7 @@
         <div id = "groupB" name = "groupB" class = "center container">
             <div class = "iA center group-titles"  id = "clave02">
                 <div class="main-title" onmousemove="PlaySound('title_9')" onmouseout="StopSound('title_9')">
-                    <h3> Nosotrso estamos interesados en conocer el acceso a la educación sexual</h3>
+                    <h3> Nosotros estamos interesados en conocer el acceso a la educación sexual</h3>
                 </div>
                 <div class = "next" id ="next1"><a href="#" onclick="nextQuestion('clave02',13)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
@@ -335,6 +342,7 @@
                     <div class="radio" onmousemove="PlaySound('platicas_s2')" onmouseout="StopSound('platicas_s2')">
                         <label><input type="radio" name="platicas_salud_sexual" value="9.2"/> No </label>
                     </div>
+                    <label ><input type="radio" name="platicas_salud_sexual" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(13,14)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -350,6 +358,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('phds_s2')" onmouseout="StopSound('phds_s2')">
                         <label><input  type="radio" name="padres_hablado" value="10.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="padres_hablado" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -362,7 +371,7 @@
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(14,15)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
             <div id="15" class="form-group">
-                <div class="question" onmousemove="PlaySound('aqesex_s')" onmouseout="StopSound('aqesex_s')"><label>15. ¿A qué edad los varones en su comunidad tienen su primera novia?</label></div>
+                <div class="question" onmousemove="PlaySound('aqesex_s')" onmouseout="StopSound('aqesex_s')"><label>15. ¿A qué edad los hombres su comunidad tienen su primera novia?</label></div>
                 <div class="controls">
                         <input onkeydown="validacion_texto('edad_varones','r_next')" class="textinput textInput form-control" id="edad_varones" maxlength="45" name="edad_varones" type="number" min="1" placeholder="Ingrese Edad">
                 </div>
@@ -389,6 +398,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="primera_relacion" value="13.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="primera_relacion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div id="17.1" class="form-group1">
@@ -415,6 +425,7 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="demostrar_hombre" value="14.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="demostrar_hombre" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-1','d-18-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -430,6 +441,7 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="papas_dicen" value="14.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="papas_dicen" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-2','d-18-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -448,6 +460,7 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="amigos_relaciones" value="14.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="amigos_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-3','d-18-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -465,6 +478,7 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="deja_tren" value="14.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="deja_tren" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-4','d-18-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -483,6 +497,7 @@
                     <div class="radio" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="prueba_amor" value="14.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="prueba_amor" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-18-5','d-18-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -501,6 +516,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('primera_s2')" onmouseout="StopSound('primera_s2')">
                         <label><input type="radio" name="otro_jovenes_temprana" value="14.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="otro_jovenes_temprana" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div id="18.1" class="form-group1">
@@ -525,6 +541,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="centro_programa" value="15.2" /> No <br></label>
                     </div>
+                    <label ><input type="radio" name="centro_programa" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(19,20)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -547,6 +564,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_salud" value="16.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="platicas_salud" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next()"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -564,6 +582,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="lengua_materna" value="16.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="lengua_materna" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-20-2','d-20-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -571,7 +590,7 @@
                 </div>
                 <div id="d-20-3" class="answers">
                     <div class="subText" onmousemove="PlaySound('servicios_s3')" onmouseout="StopSound('servicios_s3')">
-                      <label>Se da a conocer los términos de salud sexual y reproductivo de acuerdo al contexto</label>  
+                      <label>Se da a conocer los términos de salud sexual y reproductiva de acuerdo al contexto</label>  
                     </div>
                 <div class="controls ">
                 <article>
@@ -581,6 +600,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="terminos_salud"  value="16.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="terminos_salud" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-20-3','d-20-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -598,6 +618,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_pueblos" value="16.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="platicas_pueblos" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(20,21)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -615,6 +636,7 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="medios_comunicacion" value="17.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="medios_comunicacion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext21()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -635,6 +657,7 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_español" value="18.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="idioma_español" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-22-1','d-22-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -652,6 +675,7 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_materno" value="18.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="idioma_materno" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-22-2','d-22-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -669,6 +693,7 @@
                     <div class="radio" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_español_materno" value="18.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="idioma_español_materno" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-22-3','d-22-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -686,6 +711,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('abordan_s2')" onmouseout="StopSound('abordan_s2')">
                         <label><input type="radio" name="idioma_otro" value="18.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="idioma_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div id="22.1" class="form-group1">
@@ -712,6 +738,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="planificacion_familiar" value="19.2" /> No</label>
                     </div>
+                    <label ><input type="radio" name="planificacion_familiar" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(23,24)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -734,6 +761,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_edad" value="20.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="discriminacion_edad" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                      <div class = "next r_next"><a href="#" onclick="nextQuestion('d-24-1','d-24-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -751,6 +779,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_indigena" value="20.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="discriminacion_indigena" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                      <div class = "next r_next"><a href="#" onclick="nextQuestion('d-24-2','d-24-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -768,6 +797,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_genero" value="20.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="discriminacion_genero" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                      <div class = "next r_next"><a href="#" onclick="nextQuestion('d-24-3','d-24-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -785,6 +815,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="discriminacion_otro" value="20.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="discriminacion_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -823,6 +854,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="fidelidad" value="21.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="fidelidad" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-25-1','d-25-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -838,8 +870,9 @@
                         <label><input type="radio" name="preservativo" value="21.B.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
-                        <label><input type="radio" name="preservativo" value="21.B.2" checked="checked"/> No </label>
+                        <label><input type="radio" name="preservativo" value="21.B.2"/> No </label>
                     </div>
+                    <label ><input type="radio" name="preservativo" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-25-2','d-25-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -857,6 +890,7 @@
                     <div class="radio" onmousemove="PlaySound('plan_s2')" onmouseout="StopSound('plan_s2')">
                         <label><input type="radio" name="abstinencia" value="21.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="abstinencia" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -876,6 +910,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="persona_saludable" value="22.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="persona_saludable" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(26,27)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -898,6 +933,7 @@
                         <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                             <label><input type="radio" name="picadura_mosquito" value="23.A.2" /> No </label>
                         </div>
+                        <label ><input type="radio" name="picadura_mosquito" checked="checked" hidden="true" value="97"/></label>
                     </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-1','d-27-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -915,6 +951,7 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="relacion_proteccion" value="23.B.2" /> No </label>
                             </div>
+                            <label ><input type="radio" name="relacion_proteccion" checked="checked" hidden="true" value="97"/></label>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-2','d-27-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -932,6 +969,7 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="compartir_persona" value="23.C.2" /> No </label>
                             </div>
+                            <label ><input type="radio" name="compartir_persona" checked="checked" hidden="true" value="97"/></label>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-3','d-27-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -951,6 +989,7 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="beso" value="23.D.2" /> No </label>
                             </div>
+                            <label ><input type="radio" name="beso" checked="checked" hidden="true" value="97"/></label>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-4','d-27-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -968,6 +1007,7 @@
                             <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="abrazo" value="23.E.2" /> No </label>
                             </div>
+                            <label ><input type="radio" name="abrazo" checked="checked" hidden="true" value="97"/></label>
                         </article>
                     </div>
                     <div class = "next r_next"><a href="#" onclick="nextQuestion('d-27-5','d-27-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -985,6 +1025,7 @@
                             <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                                 <label><input type="radio" name="adquirir_otro" value="23.F.2" /> No </label>
                             </div>
+                            <label ><input type="radio" name="adquirir_otro" checked="checked" hidden="true" value="97"/></label>
                         </article>
                     </div>
                     <div id="27.1" class="form-group1">
@@ -1015,6 +1056,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="peso" value="24.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="peso" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-1','d-28-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1032,6 +1074,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="diarrea" value="24.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="diarrea" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-2','d-28-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1049,6 +1092,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="tos" value="24.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="tos" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-3','d-28-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1066,6 +1110,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="enfermedades" value="24.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="enfermedades" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-4','d-28-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1083,6 +1128,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="cansancio" value="24.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="cansancio" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-28-5','d-28-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1100,6 +1146,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="señal_otro" value="24.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="señal_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1129,6 +1176,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="abstenerse" value="25.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="abstenerse" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-1','d-29-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1146,6 +1194,7 @@
                     <div class="radio">
                         <label><input type="radio" name="condon_relacion" value="25.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="condon_relacion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-2','d-29-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1163,6 +1212,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="promiscuo" value="25.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="promiscuo" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-3','d-29-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1180,6 +1230,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="trabajadoras" value="25.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="trabajadoras" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-4','d-29-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1197,6 +1248,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="homosexuales" value="25.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="homosexuales" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-29-5','d-29-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1214,6 +1266,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="significa_otro" value="25.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="significa_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1245,6 +1298,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="llaga" value="26.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="llaga" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-1','d-30-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1262,6 +1316,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="comezon" value="26.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="comezon" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-2','d-30-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1279,6 +1334,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="ardor" value="26.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="ardor" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-3','d-30-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1296,6 +1352,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="materia" value="26.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="materia" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-4','d-30-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1313,6 +1370,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="flujo" value="26.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="flujo" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-5','d-30-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1330,6 +1388,7 @@
                     <div class="radio" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="ulcera" value="26.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="ulcera" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-30-6','d-30-7')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1347,6 +1406,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q24_s2')" onmouseout="StopSound('q24_s2')">
                         <label><input type="radio" name="sintoma_otro" value="26.G.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="sintoma_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1369,7 +1429,7 @@
                         <label><input type="radio" name="busca_tratamiento" value="27.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
-                        <label><input type="radio" name="busca_tratamiento" ''''''''''''value="27.2" /> No </label>
+                        <label><input type="radio" name="busca_tratamiento" checked="checked" value="27.2" /> No </label>
                     </div>
                 </article>
                 </div>
@@ -1392,6 +1452,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="hospital" value="28.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="hospital" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-1','d-32-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1409,6 +1470,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="puesto" value="28.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="puesto" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-2','d-32-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1426,6 +1488,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="farmacia" value="28.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="farmacia" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-3','d-32-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1443,6 +1506,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="doctora" value="28.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="doctora" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-4','d-32-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1460,6 +1524,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="comadrona" value="28.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="comadrona" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-32-5','d-32-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1477,6 +1542,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="ayuda_otro" value="28.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="ayuda_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1506,6 +1572,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="acetaminofen" value="29.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="acetaminofen" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-1','d-33-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1523,6 +1590,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="antibiotico" value="29.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="antibiotico" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-2','d-33-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1540,6 +1608,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="vitamina" value="29.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="vitamina" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-3','d-33-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1557,6 +1626,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="informacion_cuidar" value="29.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="informacion_cuidar" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-4','d-33-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1574,6 +1644,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="nada" value="29.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="nada" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-5','d-33-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1591,6 +1662,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="refirieron_medico" value="29.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="refirieron_medico" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-33-6','d-33-7')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1609,6 +1681,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="tratamiento_otro" value="29.G.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="tratamiento_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div id="33.1" class="form-group1">
@@ -1638,6 +1711,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="dieron_condones" value="30.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="dieron_condones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-1','d-34-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1655,6 +1729,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="utilizar_condones" value="30.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="utilizar_condones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-2','d-34-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1673,6 +1748,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="platicaron_condon" value="30.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="platicaron_condon" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-3','d-34-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1690,6 +1766,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="material_escrito" value="30.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="material_escrito" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-4','d-34-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1707,6 +1784,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="informacion_volver" value="30.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="informacion_volver" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-5','d-34-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1724,6 +1802,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="servicio_apto" value="30.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="servicio_apto" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-34-6','d-34-7')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1741,6 +1820,7 @@
                     <div class="radio" onclick="nextSubQuestion()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="preguntas_otro" value="30.G.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="preguntas_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1771,6 +1851,7 @@
                     <div class="radio" onmousemove="PlaySound('q33_s4')" onmouseout="StopSound('q33_s4')">
                         <label><input type="radio" name="riesgo" value="31.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="riesgo" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(35,36)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1789,8 +1870,9 @@
                         <label><input type="radio" name="cambiado_comportamiento" value="32.2" /> No </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q34_s1')" onmouseout="StopSound('q30_s')">
-                        <label><input type="radio" name="cambiado_comportamiento" value="3" /> No sabe </label>
+                        <label><input type="radio" name="cambiado_comportamiento" value="32.3" /> No sabe </label>
                     </div>
+                    <label ><input type="radio" name="cambiado_comportamiento" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext36()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1813,6 +1895,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="dejo_relaciones" value="33.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="dejo_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-1','d-37-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1830,6 +1913,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="condon_relaciones" value="33.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="condon_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-2','d-37-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1847,6 +1931,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="limitado_pareja" value="33.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="limitado_pareja" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-3','d-37-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1864,6 +1949,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="numero_parejas" value="33.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="numero_parejas" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-4','d-37-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1881,6 +1967,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="practicar_sexo" value="33.E.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="practicar_sexo" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-37-5','d-37-6')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1898,6 +1985,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="hecho_otro" value="33.F.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="hecho_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
 
@@ -1927,6 +2015,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="pildora" value="34.A.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="pildora" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-1','d-38-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1944,6 +2033,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="diu" value="34.B.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="diu" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-2','d-38-3')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1961,6 +2051,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="inyecciones" value="34.C.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="inyecciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-3','d-38-4')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1978,6 +2069,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="condones" value="34.D.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="condones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-38-4','d-38-5')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1995,6 +2087,7 @@
                     <div class="radio" onclick="nextSubQuestionNOT()" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="metodo_otro" value="34.E.2" /> No <br></label>
                     </div>
+                    <label ><input type="radio" name="metodo_otro" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div id="38.1" class="form-group1">
@@ -2035,6 +2128,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="experiencia_sexual" value="35.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="experiencia_sexual" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next1"><a href="#" onclick="nextQuestion(39,40)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2059,6 +2153,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="joven_virgen" value="36.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="joven_virgen" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="next1"><a href="#" onclick="nextQuestion(40,41)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2083,6 +2178,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="joven_relaciones" value="37.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="joven_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(41,42)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2107,6 +2203,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="mujer_relaciones" value="38.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="mujer_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(42,43)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2131,6 +2228,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="mujer_coquetear" value="39.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="mujer_coquetear" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(43,44)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2155,6 +2253,7 @@
                     <div class="radio" onmousemove="PlaySound('q38_s4')" onmouseout="StopSound('q38_s4')">
                         <label><input type="radio" name="hombre_exitacion" value="40.4" /> Definitivamente no </label>
                     </div>
+                    <label ><input type="radio" name="hombre_exitacion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(44,'clave05')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2187,6 +2286,7 @@
                     <div class="radio">
                         <label><input type="radio" name="tiempo_pareja" value="41.4" /> Actualmente no tengo pareja </label>
                     </div>
+                    <label ><input type="radio" name="tiempo_pareja" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext45()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2203,8 +2303,9 @@
                         <label><input type="radio" name="mas_pareja" value="42.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
-                        <label><input type="radio" name="mas_pareja" value="42.2" /> No </label>
+                        <label><input type="radio" name="mas_pareja" checked="checked" value="42.2" />  No </label>
                     </div>
+                    <label ><input type="radio" name="mas_pareja" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2228,6 +2329,7 @@
                     <div class="radio" onmousemove="PlaySound('q47_s4')" onmouseout="StopSound('q47_s4')">
                         <label><input type="radio" name="tiempo_otra1" value="43.5" /> Más de un año </label>
                     </div>
+                    <label ><input type="radio" name="tiempo_otra1" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(47,48)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2252,6 +2354,7 @@
                     <div class="radio" onmousemove="PlaySound('q48_s4')" onmouseout="StopSound('q48_s4')">
                         <label><input type="radio" name="cuantas_parejas" value="44.4" /> 7 o más </label>
                     </div>
+                    <label ><input type="radio" name="cuantas_parejas" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" ><a href="#" onclick="nextQuestion(48,49)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2270,6 +2373,7 @@
                     <div class="radio" onmousemove="PlaySound('q49_s2')" onmouseout="StopSound('q49_s2')">
                         <label><input type="radio" name="condon_otras" value="45.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="condon_otras" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="question49()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2288,6 +2392,7 @@
                     <div class="radio" onmousemove="PlaySound('q49_s2')" onmouseout="StopSound('q49_s2')">
                         <label><input type="radio" name="condon_ultima" value="46.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="condon_ultima" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(50,51)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2309,6 +2414,7 @@
                     <div class="radio" onmousemove="PlaySound('q51_s3')" onmouseout="StopSound('q51_s3')">
                         <label><input type="radio" name="tiempo_otra" value="47.3" /> Nunca </label>
                     </div>
+                    <label ><input type="radio" name="tiempo_otra" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(51,52)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2333,6 +2439,7 @@
                     <div class="radio" onmousemove="PlaySound('q52_s4')" onmouseout="StopSound('q52_s4')">
                         <label><input type="radio" name="toma_alcohol1" value="48.4" /> Nunca toma </label>
                     </div>
+                    <label ><input type="radio" name="toma_alcohol1" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext52()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2351,6 +2458,7 @@
                     <div class="radio" onmousemove="PlaySound('q53_s2')" onmouseout="StopSound('q53_s2')">
                         <label><input type="radio" name="toma_relaciones" value="49.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="toma_relaciones" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(53,54)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2377,6 +2485,7 @@
                     <div class="radio" onmousemove="PlaySound('q54_s5')" onmouseout="StopSound('q54_s5')">
                         <label><input type="radio" name="general_idioma" value="50.5" /> Solo lengua maya </label>
                     </div>
+                    <label ><input type="radio" name="general_idioma" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion(54,55)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2395,6 +2504,7 @@
                     <div class="radio" onmousemove="PlaySound('q55_s2')" onmouseout="StopSound('q55_s2')">
                         <label><input type="radio" name="mas_informacion" value="51.2" /> No </label>
                     </div>
+                    <label ><input type="radio" name="mas_informacion" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next" id ="the-end"><a href="#" onclick="nextQuestion('the-end','btn-send')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>

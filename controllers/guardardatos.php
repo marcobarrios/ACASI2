@@ -37,7 +37,14 @@ if ($mysqli === false) {
             $sql = "INSERT INTO respuesta(idrespuesta, respuesta, idpregunta, idencuesta) VALUES (?,?,?,?)";
             if($stmt = $mysqli->prepare($sql)) {
                 $idrespuesta = '';
-                $respuesta = 'codigo';
+                $temp1 = $_POST['dia'];
+                $temp2 = $_POST['mes'];
+                $temp3 = $_POST['año'];
+                $temp4 = $_POST['nombre'];
+                $temp4 = strtoupper(substr($temp4, 0, 2));
+                $temp5 = $_POST['apellido'];
+                $temp5 = strtoupper(substr($temp5, 0, 2));
+                $respuesta = $temp4.$temp5.$temp1.$temp2.$temp3;
                 $idpregunta = 1;
                 //CODIGO
                 $stmt->bind_param('isii', $idrespuesta, $respuesta, $idpregunta, $idencuesta);
@@ -50,12 +57,14 @@ if ($mysqli === false) {
                     if($stmt->execute()) {
                         $idrespuesta = '';
                         $respuesta = $_POST['nombre'];
+                        $respuesta = strtoupper($respuesta);
                         $idpregunta = 3;
                         //NOMBRE
                         $stmt->bind_param('isii', $idrespuesta, $respuesta, $idpregunta, $idencuesta);
                         if($stmt->execute()) {
                             $idrespuesta = '';
                             $respuesta = $_POST['apellido'];
+                            $respuesta = strtoupper($respuesta);
                             $idpregunta = 4;
                             //APELLIDO
                             $stmt->bind_param('isii', $idrespuesta, $respuesta, $idpregunta, $idencuesta);
