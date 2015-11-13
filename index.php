@@ -14,7 +14,6 @@
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
     <link rel ="shortcut icon" type = "image/x-icon" href = "images/logo.ico">
     <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="styles/styles-portada.css">

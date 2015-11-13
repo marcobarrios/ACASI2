@@ -33,7 +33,7 @@
                 <div class="main-title">
                     <h3>Información General</h3>
                 </div>
-                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(0,1)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next" id ="next1"><a href="#" onclick="nextQuestion(0,18)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
             </div>
             <div id="1" class="form-group">
                 <div class="question">
@@ -571,7 +571,7 @@
                     <label ><input type="radio" name="platicas_salud" hidden="true" value="97"/></label>
                 </article>
                 </div>
-                <div class = "next r_next()"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next r_next"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
                 </div>
                 <div id="d-20-2" class="answers">

@@ -54,8 +54,10 @@ header h2,input[type = text],.btn-div,.center{
 .radio label{
 	width:100%;
 }
-.subText{
+.subText, .subTexto{
 	font-size:1.4em;
+	color: #BF360C;
+
 }
 @media screen and (min-width: 800px){
 	.form-group .question label{
