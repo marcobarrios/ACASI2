@@ -3,15 +3,10 @@
 	padding-top:20px
 }
 #login .form-group input{
-	width:auto
 }
 #login .form-group input[type="password"], #login .form-group input[type="email"]{
 	text-align:left;
 	width:100% !important
-}
-#login .glyphicon-user{
-	font-size:135px;
-	color:#fff
 }
 #loginBody{
 	z-index:10;
@@ -21,8 +16,8 @@
 	border-radius:5px;
 	box-shadow:0 1px 2px rgba(0,0,0,.05);
 	text-align:center;
-	width:45%;
-	margin:10px auto;
+	width:40%;
+	margin:50px auto;
 	padding:30px;
 }
 #loginBarra{
@@ -30,7 +25,7 @@
 	left:0;
 	right:0;
 	height:130px;
-	top:210px;
+	top:220px;
 	z-index:-10;
 	background:#01579B;
 }
