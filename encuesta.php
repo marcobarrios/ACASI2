@@ -1433,7 +1433,7 @@
                         <label><input type="radio" name="busca_tratamiento" value="27.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
-                        <label><input type="radio" name="busca_tratamiento" checked="checked" value="27.2" /> No </label>
+                        <label><input type="radio" name="busca_tratamiento" value="27.2" /> No </label>
                     </div>
                 </article>
                 </div>
