@@ -63,18 +63,21 @@ function questionNext36(){
 }
 function questionNext45(){
 	$("#45").hide();
-	if(document.myform.tiempo_pareja.value=="41.4"){
+	$(".r_next").hide();
+	if(document.myform.tiempo_pareja.value!="41.4"){
 		$("#46").show()
 	}else{
 		if(document.myform.primera_relacion.value=="13.1"){
 			$("#50").show()
 		}else{
-			$("#51").show()
+			$("#52").show()
 		}
 	}
+
 }
 function questionNext46(){
 	$("#46").hide();
+	$(".r_next").hide();
 	if(document.myform.mas_pareja.value=="42.1"){
 		$("#47").show()
 	}else{
@@ -121,35 +124,38 @@ function validacion_texto(v,v2){
 $('._mDep').on('change',function(){
     var valor = $(this).val();
     if(valor=='Aguacatán'){
-       $("#departamento").val("Huehuetenango");
-       
+        document.getElementById("departamento").value = "Huehuetenango";
     }
     else if(valor == 'Colotenango')
     {
-       $("#departamento").val("Huehuetenango");
+       document.getElementById("departamento").value = "Huehuetenango";
        $(".next11").show();
     }
     else if(valor == 'Concepción Chiquirichapa')
     {
-       $("#departamento").val("Quetzaltenango");
+       document.getElementById("departamento").value = "Quetzaltenango";
        $(".next11").show(); 
     }
     else if(valor == 'Nebaj')
     {
-       $("#departamento").val("Quiche"); 
+       document.getElementById("departamento").value = "Quiche";
        $(".next11").show();
     }
     else if(valor == 'San Juan Ostuncalco')
     {
-       $("#departamento").val("Quetzaltenango");
+    	document.getElementById("departamento").value = "Quetzaltenango";
        $(".next11").show(); 
     }
     else if(valor == 'San Pedro Sacatepéquez')
-    {
-       $("#departamento").val("San Marcos"); 
+    { 
+       document.getElementById("departamento").value = "San Marcos";
        $(".next11").show();
     }
 });
+function ver__(){
+	var valor = $('#departamento').val();
+	alert(valor);
+}
 function fecha(){
 	$(".n_next").show();
 }

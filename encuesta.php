@@ -249,7 +249,8 @@
                         <option value="San Juan Ostuncalco">San Juan Ostuncalco</option>
                         <option value="San Pedro Sacatepéquez">San Pedro Sacatepéquez</option>
                     </select>
-                <br><div onmousemove="PlaySound('vive_s3')" onmouseout="StopSound('vive_s3')">Departamento:</div>
+                <br>
+                <div onmousemove="PlaySound('vive_s3')" onmouseout="StopSound('vive_s3')">Departamento:</div>
                     <input type="text" class="textinput textInput form-control" id="departamento" name="departamento" disabled>
                 <br><div onmousemove="PlaySound('vive_s1')" onmouseout="StopSound('vive_s1')">Aldea, Canton o Caserio:</div>
                     <input class="textinput textInput form-control" maxlength="45" name="aldea" type="text" placeholder = "Ingrese Aldea, Canton o Caserio">
@@ -564,7 +565,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_salud" value="16.A.2" /> No </label>
                     </div>
-                    <label ><input type="radio" name="platicas_salud" checked="checked" hidden="true" value="97"/></label>
+                    <label ><input type="radio" name="platicas_salud" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next()"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -646,7 +647,7 @@
                 <div class="question" onmousemove="PlaySound('eidioma_s')" onmouseout="StopSound('eidioma_s')">
                 <label>22. ¿En que idioma lo hacen?</label></div>
                 <div id="d-22-1">
-                    <div class="subTexto" onmousemove="PlaySound('eidioma_s1')" onmouseout="StopSound('eidioma_s1')">
+                    <div class="subText" onmousemove="PlaySound('eidioma_s1')" onmouseout="StopSound('eidioma_s1')">
                     <label>Español o castellano</label>
                 </div>
                 <div class="controls ">
@@ -664,7 +665,7 @@
 
                 </div>
                 <div id="d-22-2" class="answers">
-                    <div class="subTexto" onmousemove="PlaySound('eidioma_s2')" onmouseout="StopSound('eidioma_s2')">
+                    <div class="subText" onmousemove="PlaySound('eidioma_s2')" onmouseout="StopSound('eidioma_s2')">
                     <label>Idioma materna</label>
                     </div>
                 <div class="controls ">
@@ -1273,7 +1274,7 @@
                 <div id="29.1" class="form-group1">
                 <label>Especifique qué significa para usted</label>
                 <div class="controls ">
-                    <input onkeydown="validacion_texto('otro_significaco','r_next')" class="textinput textInput form-control" id="otro_significado" maxlength="45" name="otro_significado" type="text" placeholder="Especifique">
+                    <input onkeydown="validacion_texto('otro_significado','r_next')" class="textinput textInput form-control" id="otro_significado" maxlength="45" name="otro_significado" type="text" placeholder="Especifique">
                 </div>
                 </div>
 
@@ -2303,7 +2304,7 @@
                         <label><input type="radio" name="mas_pareja" value="42.1" /> Si </label>
                     </div>
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
-                        <label><input type="radio" name="mas_pareja" checked="checked" value="42.2" />  No </label>
+                        <label><input type="radio" name="mas_pareja" value="42.2" />  No </label>
                     </div>
                 </article>
                 </div>
