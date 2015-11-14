@@ -19,15 +19,16 @@ if ($mysqli === false) {
 } else {
 
     //<editor-fold desc="INGRESO DE ENCUESTA">
-    $sql = "INSERT INTO encuesta(idencuesta, fechaencuesta, ubicacion1, ubicacion2) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO encuesta(idencuesta, fechaencuesta, latitud, longitud, direccionip) VALUES (?, ?, ?, ?, ?)";
     if ($stmt = $mysqli->prepare($sql)) {
         $idencuestado = '';
         $hoy = getdate();
         $fechaencuesta = $hoy ['year'] . '/' . $hoy ['mon'] . '/' . $hoy ['mday'] . ' ' . $hoy ['hours'] . ':' . $hoy ['minutes'] . ':' . $hoy ['seconds'];
-        $ubicacion1 = '';
-        $ubicacion2 = '';
+        $latitud = $_POST['latitud'];
+        $longitud = $_POST['longitud'];
+        $direccionip = '';
 
-        $stmt->bind_param('isss', $idencuesta, $fechaencuesta, $ubicacion1, $ubicacion2);
+        $stmt->bind_param('issss', $idencuesta, $fechaencuesta, $latitud, $longitud, $direccionip);
         if ($stmt->execute()) {
             $sql = "SELECT MAX(idencuesta) AS 'idencuesta' FROM encuesta";
             $result = $mysqli->query($sql);
