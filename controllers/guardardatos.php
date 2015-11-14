@@ -13,6 +13,28 @@
  * Date: 16/02/2015
  * Time: 6:47 PM
  */
+
+function getRealIP() {
+    if (isset($_SERVER['HTTP_CLIENT_IP'])) {
+        return $_SERVER['HTTP_CLIENT_IP']; 
+    }
+    elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        return $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
+    elseif (isset($_SERVER['HTTP_X_FORWARDED'])) {
+        return $_SERVER['HTTP_X_FORWARDED'];
+    }
+    elseif (isset($_SERVER['HTTP_FORWARDED_FOR'])) {
+        return $_SERVER['HTTP_FORWARDED_FOR'];
+    }
+    elseif (isset($_SERVER['HTTP_FORWARDED'])) {
+        return $_SERVER['HTTP_FORWARDED'];
+    }
+    else {
+        return $_SERVER['REMOTE_ADDR'];
+    } 
+}
+
 $mysqli = new mysqli("localhost", "root", "", "acasi2");
 if ($mysqli === false) {
     die ("ERROR: No se estableció la conexión. " . mysqli_connect_error());
@@ -26,7 +48,7 @@ if ($mysqli === false) {
         $fechaencuesta = $hoy ['year'] . '/' . $hoy ['mon'] . '/' . $hoy ['mday'] . ' ' . $hoy ['hours'] . ':' . $hoy ['minutes'] . ':' . $hoy ['seconds'];
         $latitud = $_POST['latitud'];
         $longitud = $_POST['longitud'];
-        $direccionip = '';
+        $direccionip = getRealIP();
 
         $stmt->bind_param('issss', $idencuesta, $fechaencuesta, $latitud, $longitud, $direccionip);
         if ($stmt->execute()) {

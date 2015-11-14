@@ -24,10 +24,6 @@
     </p>
     <div id="loginBody">
         <form class="form-horizontal" role="form" method="post" action="idioma.php">
-        <script language="javascript">
-var ip = java.net.InetAddress.getLocalHost().getHostAddress();
-document.writeln('Tu IP es: "' + ip + '"') 
-</script>
         <div class="form-group">
             <label class="col-md-4 control-label">Usuario</label>
             <div class="col-md-6">
