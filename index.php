@@ -10,7 +10,7 @@
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <title>ACASI</title>
+    <title>::ACASI::</title>
     <meta name = "viewport" content= "width=device-width, minimum-scale=1, maximum-scale=1"/>
     <link rel ="shortcut icon" type = "image/x-icon" href = "images/logo.ico">
     <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">

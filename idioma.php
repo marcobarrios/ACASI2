@@ -19,16 +19,16 @@
         <h2>ACASI</h2>
     </header>
 <?php $usuario = $_POST['user']; 
-$contrasenia = $_POST['password'];
+$securepassword = sha1(md5($_POST['password']));
 
 $mysqli = new mysqli("localhost", "root", "", "acasi2");
 if ($mysqli === false) {
     die ("ERROR: No se estableció la conexión. " . mysqli_connect_error());
 } else {
-    $sql = "SELECT usuario FROM usuarios where usuario = '$usuario' AND password='$contrasenia'";
-            $result = $mysqli->query($sql);
-            $row = $result->fetch_object();
-            $accesso = $row->usuario;
+    $sql = "SELECT usuario FROM usuarios where usuario = '$usuario' AND password='$securepassword'";
+    $result = $mysqli->query($sql);
+    $row = $result->fetch_object();
+    $accesso = $row->usuario;
 } 
 $mysqli->close(); ?>
 
