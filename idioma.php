@@ -38,13 +38,21 @@ $mysqli->close(); ?>
 		<div class="idiomas">
 		<h2>Seleccione el idioma para el audio en la encuesta:</h2>
 			<div class="botones-idioma">
-				<div>
-					<a href="encuesta.php?idiomas=ninguno" class="btn btn-success">Ningún Idioma</a>
-					<a href="encuesta.php?idiomas=espaniol" class="btn btn-success">Español</a>
-					<a href="encuesta.php?idiomas=aguacateco" class="btn btn-success">Aguacateco</a>
-					<a href="encuesta.php?idiomas=ixil" class="btn btn-success">Ixil</a>
-					<a href="encuesta.php?idiomas=mam" class="btn btn-success">Mam</a>
-				</div>
+                    <form action="encuesta.php?idiomas=ninguno" method ="get">
+                        <button class="btn btn-success">Ningún Idioma</button>
+                    </form>
+                    <form action="encuesta.php?idiomas=espaniol" method ="get">
+                        <button class="btn btn-success">Español</button>
+                    </form>
+                    <form action="encuesta.php?idiomas=aguacateco" method ="get">
+                        <button class="btn btn-success">Aguacateco</button>
+                    </form>
+                    <form action="encuesta.php?idiomas=ixil" method ="get">
+                        <button class="btn btn-success">Ixil</button>
+                    </form>
+                    <form action="encuesta.php?idiomas=mam" method ="get">
+                        <button class="btn btn-success">mam</button>
+                    </form>
 			</div>
 		</div>
     </form>

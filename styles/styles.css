@@ -87,7 +87,7 @@ header h2,input[type = text],.btn-div,.center{
 	text-align:center;
 	margin:0 auto;
 }
-.idiomas div a{
+.idiomas div form button{
 	display:block;
 	width:200px;
 	margin-top:10px;
