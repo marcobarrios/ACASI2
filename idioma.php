@@ -34,7 +34,7 @@ $mysqli->close(); ?>
 
 <?php if ($accesso != null) { ?>
     <form name="form" method="post" action="encuesta.php">
-    <input hidden name="user" value="1">
+    <input hidden name="access" value="1">
 		<div class="idiomas">
 		<h2>Seleccione el idioma para el audio en la encuesta:</h2>
             <div class="controls">

@@ -19,8 +19,8 @@
         <h2>ACASI</h2>
     </header>
 
-<?php $usuario = $_POST['user']; ?>
-<?php if ($usuario != null) { ?>
+<?php $access = $_POST['access']; ?>
+<?php if ($access != null) { ?>
 
     <form name="myform" method="post" action="controllers/guardardatos.php">
 
