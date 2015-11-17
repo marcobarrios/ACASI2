@@ -2523,7 +2523,7 @@
     <?php } else { header('Location: index.php'); } ?>
 
 <?php
-$idioma = $_GET['idiomas'];
+$idioma = $_POST['idiomas'];
 if($idioma == "ninguno")
 {
 }

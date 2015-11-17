@@ -37,23 +37,26 @@ $mysqli->close(); ?>
     <input hidden name="user" value="1">
 		<div class="idiomas">
 		<h2>Seleccione el idioma para el audio en la encuesta:</h2>
-			<div class="botones-idioma">
-                    <form action="encuesta.php?idiomas=ninguno" method ="get">
-                        <button class="btn btn-success">Ningún Idioma</button>
-                    </form>
-                    <form action="encuesta.php?idiomas=espaniol" method ="get">
-                        <button class="btn btn-success">Español</button>
-                    </form>
-                    <form action="encuesta.php?idiomas=aguacateco" method ="get">
-                        <button class="btn btn-success">Aguacateco</button>
-                    </form>
-                    <form action="encuesta.php?idiomas=ixil" method ="get">
-                        <button class="btn btn-success">Ixil</button>
-                    </form>
-                    <form action="encuesta.php?idiomas=mam" method ="get">
-                        <button class="btn btn-success">mam</button>
-                    </form>
-			</div>
+            <div class="controls">
+                <article>   
+                    <div class="radio">
+                        <label ><input type="radio" name="idiomas" value="ninguno">Ningún Idioma</label>
+                    </div>
+                    <div class="radio">
+                        <label ><input type="radio" name="idiomas" value="espaniol">Español</label>
+                    </div>
+                    <div class="radio">
+                        <label ><input type="radio" name="idiomas" value="aguacateco">Aguacateco</label>
+                    </div>
+                    <div class="radio">
+                        <label ><input type="radio" name="idiomas" value="ixil">Ixil</label>
+                    </div>
+                    <div class="radio">
+                        <label ><input type="radio" name="idiomas" value="mam">Mam</label>
+                    </div>
+                </article>
+            </div>
+            <button class="btn btn-success">Ir a la Encuesta</button>
 		</div>
     </form>
 
