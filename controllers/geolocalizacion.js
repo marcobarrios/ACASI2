@@ -1,18 +1,1 @@
-/**
- * Created by Marco Barrios on 23/02/2015.
- */
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(mostrarUbicacion);
-} else {alert("¡Error! Este navegador no soporta la Geolocalización.");}
-
-function mostrarUbicacion(position) {
-    var times = position.timestamp;
-    var latitud = position.coords.latitude;
-    var longitud = position.coords.longitude;
-    var altitud = position.coords.altitude;
-    var exactitud = position.coords.accuracy;
-
-    jQuery("#latitud").attr("value", latitud);
-    jQuery("#longitud").attr("value", longitud);
-    jQuery("#altitud").attr("value", altitud);
-}
+function mostrarUbicacion(a){{var c=(a.timestamp,a.coords.latitude),d=a.coords.longitude,e=a.coords.altitude;a.coords.accuracy}jQuery("#latitud").attr("value",c),jQuery("#longitud").attr("value",d),jQuery("#altitud").attr("value",e)}navigator.geolocation?navigator.geolocation.getCurrentPosition(mostrarUbicacion):alert("\xa1Error! Este navegador no soporta la Geolocalizaci\xf3n.");

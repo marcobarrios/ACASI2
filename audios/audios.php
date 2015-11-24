@@ -39,7 +39,6 @@
 <audio src="sound/<?php echo $idioma;?>/05 Pregunta 5-4.mp3" id="idioma_s4"></audio>
 <audio src="sound/<?php echo $idioma;?>/05 Pregunta 5-5.mp3" id="idioma_s5"></audio>
 <audio src="sound/<?php echo $idioma;?>/05 Pregunta 5-6.mp3" id="idioma_s6"></audio>
-<audio src="sound/<?php echo $idioma;?>/05 Pregunta 5-7.mp3" id="idioma_s7"></audio>
 
 <audio src="sound/<?php echo $idioma;?>/06 Pregunta 6.mp3" id="vive_s"></audio>
 <audio src="sound/<?php echo $idioma;?>/06 Pregunta 6-1.mp3" id="vive_s1"></audio>

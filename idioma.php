@@ -56,7 +56,7 @@ $mysqli->close(); ?>
                     </div>
                 </article>
             </div>
-            <button class="btn btn-success">Ir a la Encuesta</button>
+            <button class="btn btn-success r_next">Ir a la Encuesta</button>
 		</div>
     </form>
 

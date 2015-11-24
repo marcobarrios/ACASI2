@@ -228,9 +228,6 @@
                     <div class="radio" onmousemove="PlaySound('idioma_s6')" onmouseout="StopSound('idioma_s6')">
                         <label><input type="radio" name="idioma" value="5.6"/> Chalchiteco</label>
                     </div>
-                    <div class="radio" onmousemove="PlaySound('idioma_s7')" onmouseout="StopSound('idioma_s7')">
-                        <label><input type="radio" name="idioma" value="5.7"/> Sacapulteco</label>
-                    </div>
                     <label ><input type="radio" name="idioma" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
@@ -548,7 +545,7 @@
                     <label ><input type="radio" name="centro_programa" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
-                <div class = "next r_next"><a href="#" onclick="nextQuestion(19,20)"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
+                <div class = "next r_next"><a href="#" onclick="questionNext199()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
 
             </div>
 
