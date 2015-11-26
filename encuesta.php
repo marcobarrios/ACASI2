@@ -27,6 +27,7 @@
         <input type="hidden" name="latitud" id="latitud" value="">
         <input type="hidden" name="longitud" id="longitud" value="">
         <input type="hidden" name="altitud" id="altitud" value="">
+        <input type="hidden" name="id_acceso" id="altitud" value="<?php echo $access; ?>">
 
         <div id = "groupA" class = "center container " name="groupA">
             <div class = "iA center"  id = "0">
@@ -565,7 +566,7 @@
                     <div class="radio" onmousemove="PlaySound('centro_s2')" onmouseout="StopSound('centro_s2')">
                         <label><input type="radio" name="platicas_salud" value="16.A.2" /> No </label>
                     </div>
-                    <label ><input type="radio" name="platicas_salud" hidden="true" value="97"/></label>
+                    <label ><input type="radio" name="platicas_salud" checked="checked" hidden="true" value="97"/></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="nextQuestion('d-20-1','d-20-2')"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -1432,6 +1433,7 @@
                     <div class="radio" onmousemove="PlaySound('q29_s2')" onmouseout="StopSound('q29_s2')">
                         <label><input type="radio" name="busca_tratamiento" value="27.2" /> No </label>
                     </div>
+                    <label><input type="radio" checked="checked" hidden="true" name="busca_tratamiento" value="97" /></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext31()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>
@@ -2305,7 +2307,7 @@
                     <div class="radio" onmousemove="PlaySound('q46_s2')" onmouseout="StopSound('q46_s2')">
                         <label><input type="radio" name="mas_pareja" value="42.2" />  No </label>
                     </div>
-                    <label><input type="radio" name="mas_pareja" hidden= "True" value="97" /></label>
+                    <label><input type="radio" name="mas_pareja" checked="checked" hidden="True" value="97" /></label>
                 </article>
                 </div>
                 <div class = "next r_next"><a href="#" onclick="questionNext46()"><span class = "glyphicon glyphicon-chevron-right"></span></a></div>

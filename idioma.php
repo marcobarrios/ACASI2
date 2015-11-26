@@ -25,16 +25,16 @@ $mysqli = new mysqli("localhost", "root", "", "acasi2");
 if ($mysqli === false) {
     die ("ERROR: No se estableció la conexión. " . mysqli_connect_error());
 } else {
-    $sql = "SELECT usuario FROM usuarios where usuario = '$usuario' AND password='$securepassword'";
+    $sql = "SELECT id FROM usuarios where usuario = '$usuario' AND password='$securepassword'";
     $result = $mysqli->query($sql);
     $row = $result->fetch_object();
-    $accesso = $row->usuario;
+    $accesso = $row->id;
 } 
 $mysqli->close(); ?>
 
 <?php if ($accesso != null) { ?>
     <form name="form" method="post" action="encuesta.php">
-    <input hidden name="access" value="1">
+    <input hidden name="access" value="<?php echo $accesso; ?>">
 		<div class="idiomas">
 		<h2>Seleccione el idioma para el audio en la encuesta:</h2>
             <div class="controls">
