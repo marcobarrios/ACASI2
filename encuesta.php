@@ -22,7 +22,7 @@
 <?php $access = $_POST['access']; ?>
 <?php if ($access != null) { ?>
 
-    <form name="myform" method="post" action="controllers/guardardatos.php">
+    <form name="myform" method="post" action="controllers/guardardatos.php" onKeypress="if(event.keyCode == 13) event.returnValue = false;">
 
         <input type="hidden" name="latitud" id="latitud" value="">
         <input type="hidden" name="longitud" id="longitud" value="">
